@@ -1,2 +1,11 @@
 # GlacierMIP3
-Equilibration of glaciers under different climate states (GlacierMIP3 - Equi)
+
+[GlacierMIP](https://www.climate-cryosphere.org/mips/glaciermip/about-glaciermip) is a framework for a coordinated intercomparison of global-scale glacier mass change models to foster model improvements and reduce uncertainties in global glacier projections. It is running under the auspices of [CliC](https://www.climate-cryosphere.org/), a core project of the World Climate Research Programme.
+
+This repository holds data, compurer code and documents used for the third coordinated experiment: **GlacierMIP3: Equilibration of glaciers under different climate states (GlacierMIP3 - Equi)**.
+
+Watch this space for more content soon.
+
+Contact:
+- [Harry Zekollari](https://www.tudelft.nl/citg/over-faculteit/afdelingen/geoscience-remote-sensing/staff/researchers/dr-h-harry-zekollari)
+- [Fabien Maussion](https://fabienmaussion.info)
