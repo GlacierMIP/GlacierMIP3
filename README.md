@@ -4,7 +4,9 @@
 
 This repository holds data, compurer code and documents used for the third coordinated experiment: **GlacierMIP3: Equilibration of glaciers under different climate states (GlacierMIP3 - Equi)**.
 
-Watch this space for more content soon.
+Use the [issues](https://github.com/GlacierMIP/GlacierMIP3/issues) if you'd like to make suggestions about the project.
+
+Watch this space for more content soon!
 
 Contact:
 - [Harry Zekollari](https://www.tudelft.nl/citg/over-faculteit/afdelingen/geoscience-remote-sensing/staff/researchers/dr-h-harry-zekollari)
