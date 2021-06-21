@@ -8,7 +8,8 @@ Use the [issues](https://github.com/GlacierMIP/GlacierMIP3/issues) if you'd like
 
 Watch this space for more content soon!
 
-So far there are just some postprocessing steps of ISIMIP3b data inside.
+
+- in `ìsimip3b_postprocessing_analysis` there are all steps inside to download and postprocess the isimip3b data to monthly data together with some preliminary climate analysis. 
 
 Contact:
 - [Harry Zekollari](https://www.tudelft.nl/citg/over-faculteit/afdelingen/geoscience-remote-sensing/staff/researchers/dr-h-harry-zekollari)
