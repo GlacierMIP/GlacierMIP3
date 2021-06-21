@@ -1,0 +1,35 @@
+*.py[cod]
+__pycache__
+
+# asv stuff
+.asv/
+
+# IDE stuffs
+.idea/
+.vscode/
+
+# coverage stuffs
+.coverage
+
+# OS generated files
+.DS_Store
+
+# Notebook stuffs
+examples/*checkpoints
+.ipynb_checkpoints
+*.nbgrader.log
+
+# Tests stuffs
+oggm/tests/result_images
+result_images
+.pytest_cache
+
+# Packages
+*.egg
+*.egg-info
+eggs
+*.eggs
+
+# specific
+*.cache
+*.lock
