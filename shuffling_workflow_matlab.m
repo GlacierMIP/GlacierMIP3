@@ -29,7 +29,6 @@ GCM_lon=ncread('tasAdjust/ipsl-cm6a-lr_r1i1p1f1_w5e5_historical_tasAdjust_global
 GCM_lat=ncread('tasAdjust/ipsl-cm6a-lr_r1i1p1f1_w5e5_historical_tasAdjust_global_monthly_1850_2014.nc','lat');
 % time series with shuffled years
 shuffled_series_years=readmatrix('shuffled_years_GlacierMIP3.csv');
-shuffled_series_years(1,:)=[]; % Remove the first row (= index)
 shuffled_series_years(:,1)=[]; % Remove the first column (= years)
 
 %% Merge the 'historical' and 'future' temperature series into a single time series
@@ -47,17 +46,17 @@ for i=1:length(data_monthly)/12
 end
 
 %% Shuffle for the various time series (8 in total):
-data_shuffled=nan([8 5000]); % 8 time series in total (1851-1870, 1901-1920, 1951-1970, 1995-2014, 2021-2040, 2041-2060, 2061-2080, 2081-2100), these have a length of 5000 years
-for i=1:8 % 8 time series
-    for j=1:5000 % each time series is 5000 years long
+data_shuffled=nan([5000 8]); % 8 time series in total (1851-1870, 1901-1920, 1951-1970, 1995-2014, 2021-2040, 2041-2060, 2061-2080, 2081-2100), these have a length of 5000 years
+for i=1:5000 % each time series is 5000 years long
+    for j=1:8 % 8 time series
         year=shuffled_series_years(i,j);
         data_shuffled(i,j)=data_annual_glacier(year-1849); % '-1849', as index 1 = year 1850
     end
 end
 
-% Write out the files: same as on GitHub, but without the first row (index) and columns (years)
+% Write out the files: same as on GitHub, but without the first row (header) and column (simulation year)
 % if glacier=='RGI60-11.00897' % Hintereisferner
-%     writematrix(data_shuffled,'test_RGI60-11.00897_ipsl-cm6a-lr_tasAdjust_ssp585_shuffled.csv') 
+%     writematrix(data_shuffled,'test_RGI60-11.00897_ipsl-cm6a-lr_ssp585_tasAdjust_shuffled.csv')
 % elseif glacier=='RGI60-16.02207' % Shallap
-%     writematrix(data_shuffled,'test_RGI60-16.02207_ipsl-cm6a-lr_tasAdjust_ssp585_shuffled.csv') 
+%     writematrix(data_shuffled,'test_RGI60-16.02207_ipsl-cm6a-lr_ssp585_tasAdjust_shuffled.csv') 
 % end
