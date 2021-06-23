@@ -25,8 +25,8 @@ In detail, the simulations will consist of three main steps:
   - To avoid a cyclicity in the volume/area time series, the years within the repeat reference period are **&#39;shuffled&#39;**. The order in which the calendar years are shuffled is imposed and needs to be read in from a csv-file (see [section 6](#section-6) for details)
   - The equilibration experiments will be run for a **2000/5000-yr time period** (depending on the region, see [Table 1](#table-1)). This long time period will ensure that also large and gently sloping glaciers with long response times will reach equilibrium by the end of the simulation. The participants are asked to run the simulations for the entire time period. If the participants need to reduce the length of the experiments for computational reasons, a criterion needs to be defined when to stop the simulation; however, the submitted volume/area time series need to be extrapolated to correspond to the imposed 2000/5000-yr time period.
 
-![](https://github.com/GlacierMIP/GlacierMIP3/blob/main/isimip3b_postprocessing_analysis/experiment-example.png)
 <a id="fig-1"></a>  
+![](https://github.com/GlacierMIP/GlacierMIP3/blob/main/isimip3b_postprocessing_analysis/experiment-example.png)
 **Figure 1** Illustration of climatic data from CMIP6 GCM (ISIMIP3b IPSL ssp585) and application of this data for equilibration experiments (here shown for global mean temperature, GMT). The left panel represents the actual GCM data (from 1850 to 2100), while the right panel shows the forcing for the eight distinct equilibration experiments (here shown for the first 600 yrs shuffling of reference 20-yr time-period; total series are 5000 years long). For an overview of all GCMs considered and the total 80 equilibration experiments resulting from this, refer to [Suppl. Fig. 1](#suppl-fig-1).
 
 ## **3) Standardization of experiments**
@@ -36,6 +36,7 @@ In detail, the simulations will consist of three main steps:
 - **Greenland periphery** : all glaciers with connectivity level 0 and 1 should be included, level 2 glaciers should be excluded (as was the case for [GlacierMIP2](https://doi.org/10.1029/2019EF001470))
 - Ideally, participants cover all **RGI regions** ; however, the minimum requirement for participation is the computation of at least one complete RGI region.
 
+<a id="table-1"></a>  
 | **RGI region** | **A (km²)** | **V (10³ km³)**| **Length of experiments** |
 | --- | --- | --- | --- |
 | 01 Alaska | 86,677 | 18.98 | 5000 years |
@@ -57,12 +58,10 @@ In detail, the simulations will consist of three main steps:
 | 17 Southern Andes | 29,368 | 5.34 | 5000 years |
 | 18 New Zealand | 1,161 | 0.07 | 2000 years |
 | 19 Antarctic and subantarctic | 132,771 | 46.47 | 5000 years |
-<a id="table-1"></a>  
 
 **Table 1** Length of equilibration experiments for the various RGI regions. The area is from RGI v6.0, while the volume is from the consensus estimate by [Farinotti et al. (2019)](https://doi.org/10.1038/s41561-019-0300-3). For regions with a total ice volume below 3.5 x 103 km³, the equilibration experiments need to be run for 2000 years, while for regions with a volume larger than 3.5 x 103 km³, the experiments should be run for 5000 years. These time periods were determined based on preliminary experiments conducted with the [Open Global Glacier Model (OGGM)](https://oggm.org/).
 
 ## **4) Requested output** <a id="section-4"></a>  
-
 
 - **Annual time series of regional glacier volume and area** for each experiment and for each RGI region. **This needs to be provided as an** individual NetCDF file per RGI region and for every equilibration experiment. An example of how the data should be outputted is available [here](Zekollari_rgi08_sum_2061-2080_ipsl-cm6a-lr_ssp585.nc).
 - When you are ready to submit your results, contact us (fabien.maussion@uibk.ac and zharry@ethz.ch). We will then inform you about how the data will be collected.
@@ -72,18 +71,19 @@ The file naming and format convention of the netCDF files is further described i
 
 ## **5) Requirement for participation** <a id="section-5"></a> 
 
-All participants are required, if possible, to provide the requested output ([Section 4](#section-4]) for all prescribed experiments that the model is able to handle (as some models will not be able to simulate glacier advance). The minimum requirement for participation is the computation of at least one complete RGI region. All data providers will be authors in the envisioned publication.
+All participants are required, if possible, to provide the requested output ([Section 4](#section-4)) for all prescribed experiments that the model is able to handle (as some models will not be able to simulate glacier advance). The minimum requirement for participation is the computation of at least one complete RGI region. All data providers will be authors in the envisioned publication.
 
 ## **6) GCM data and shuffling of the years** <a id="section-6"></a> 
 
 The climatic forcing comes from the latest phase of the **[The Inter-Sectoral Impact Model Intercomparison Project: ISIMIP3b](https://www.isimip.org/gettingstarted/isimip3b-bias-correction/)**. A total of 5 bias-corrected GCMs ([Table 2](#table-2)) are available, from which data is used from the historical period (1850-2014) and the future (2015-2100: ssp126, ssp370 and ssp585). This **data is originally available at the daily resolution for a total of 11 variables** : near-surface air temperature (daily min, mean, max), precipitation, relative humidity, specific humidity, wind speed, snowfall flux, air pressure and downwelling radiation (short- and longwave).
 
-For **ease of use**, the data has been transformed to the **[monthly resolution for precipitation, temperature and the std. dev. of the daily temperature (within a month)](https://github.com/GlacierMIP/GlacierMIP3/blob/main/isimip3b_postprocessing_analysis/isimip3b_postprocess_to_monthly.ipynb)**, and can directly be accessed here: [https://cluster.klima.uni-bremen.de/~lschuster/isimip3b/](https://cluster.klima.uni-bremen.de/~lschuster/isimip3b/) (total of ca. 80 GB). For models using monthly temperature and precipitation, we suggest directly using these processed data. Those who need other variables (than temperature and precipitation), or who need the data at another time resolution, should download the original data from the [ISIMIP repository](https://esg.pik-potsdam.de/search/isimip/) (note: very large data volume given the daily resolution).
+For **ease of use**, the data has been transformed to the **monthly resolution for precipitation, temperature and the std. dev. of the daily temperature within a month** [(link to applied code)](https://github.com/GlacierMIP/GlacierMIP3/blob/main/isimip3b_postprocessing_analysis/isimip3b_postprocess_to_monthly.ipynb), and can directly be accessed here: [https://cluster.klima.uni-bremen.de/~lschuster/isimip3b/](https://cluster.klima.uni-bremen.de/~lschuster/isimip3b/) (total of ca. 80 GB). For models using monthly temperature and precipitation, we suggest directly using these processed data. Those who need other variables (than temperature and precipitation), or who need the data at another time resolution, should download the original data from the [ISIMIP repository](https://esg.pik-potsdam.de/search/isimip/) (note: very large data volume given the daily resolution).
 
 For each of the 8 time period considered (1851-1870, 1901-1920, 1951-1970, 1995-2014, 2021-2040, 2061-2080, 2081-2100), the order in which the calendar years are shuffled is imposed and needs to be read in from the [shuffled_years_GlacierMIP3.csv](https://github.com/GlacierMIP/GlacierMIP3/blob/main/shuffled_years_GlacierMIP3.csv) file.
 
 For every series of shuffled keys, a time series on air temperatures is provided, which the participants can use to compare their forcing (i.e. as a &#39;check&#39;). This data is provided in [GlacierMIP3/test_shuffling](https://github.com/GlacierMIP/GlacierMIP3/tree/main/test_shuffling) for two test cases (Hintereisferner in Austria and Glaciar Shallap in Peru). Additionally, the [python](https://github.com/GlacierMIP/GlacierMIP3/blob/main/shuffling_workflow_python.ipynb) &amp; [MATLAB](https://github.com/GlacierMIP/GlacierMIP3/blob/main/shuffling_workflow_matlab.m) codes that were used to generate these time series are provided.
 
+<a id="table-2"></a>  
 | **ISIMIP 3b GCMs** |
 | --- |
 | gfdl-esm4\_r1i1p1f1 |
@@ -91,7 +91,6 @@ For every series of shuffled keys, a time series on air temperatures is provided
 | mpi-esm1-2-hr\_r1i1p1f1 |
 | mri-esm2-0\_r1i1p1f1 |
 | ukesm1-0-ll\_r1i1p1f2 |
-<a id="table-2"></a>  
 
 **Table 2** ISIMIP3b bias-corrected GCMs
 
@@ -100,7 +99,6 @@ For every series of shuffled keys, a time series on air temperatures is provided
 - 01 December 2021: submission deadline for results
 
 --- 
-
-![](https://github.com/GlacierMIP/GlacierMIP3/blob/main/isimip3b_postprocessing_analysis/experiment-overview.png)
 <a id="suppl-fig-1"></a>  
+![](https://github.com/GlacierMIP/GlacierMIP3/blob/main/isimip3b_postprocessing_analysis/experiment-overview.png)
 **Suppl. Figure 1** Illustration of GCM forcing experiments shown here for the global mean temperature (GMT). The first row represents the actual GCM data (from 1850 to 2100), while the other rows (2-5) show the forcing for the eight distinct equilibration experiments (here shown for the first 600 yrs shuffling of reference 20-yr time-period; total series are 5000 years long) for the historical time period (row 2) and the three ssps considered (rows 3-5).
