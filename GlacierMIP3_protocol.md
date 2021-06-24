@@ -67,7 +67,7 @@ In detail, the simulations will consist of three main steps:
 - When you are ready to submit your results, contact us (fabien.maussion@uibk.ac and zharry@ethz.ch). We will then inform you about how the data will be collected.
 - Optional: If possible, also provide the volume and area evolution at the individual glacier level. These data can be useful for a possible additional study to derive the response time of individual glaciers at the global scale, and how this relates to specific glacier characteristics. An example of how the data should be outputted is available [here](https://github.com/GlacierMIP/GlacierMIP3/blob/main/templates/OGGM-dyn_rgi11_glaciers_1901-1920_ipsl-cm6a-lr_hist.nc).
 
-The file naming and format convention of the netCDF files is further described in the [netcdf_file_format notebook](https://github.com/GlacierMIP/GlacierMIP3/blob/main/netcdf_file_format.ipynb).
+The file naming and format convention of the netCDF files is described in detail in the [netcdf_file_format notebook](https://github.com/GlacierMIP/GlacierMIP3/blob/main/netcdf_file_format.ipynb).
 
 ## **5) Requirement for participation** <a id="section-5"></a> 
 
