@@ -16,12 +16,10 @@ __pycache__
 
 # Notebook stuffs
 examples/*checkpoints
-.ipynb_checkpoints
+*.ipynb_checkpoints
 *.nbgrader.log
 
 # Tests stuffs
-oggm/tests/result_images
-result_images
 .pytest_cache
 
 # Packages
@@ -33,3 +31,4 @@ eggs
 # specific
 *.cache
 *.lock
+*.virtual_documents
