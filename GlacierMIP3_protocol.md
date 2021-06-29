@@ -1,6 +1,6 @@
 # GlacierMIP3: global glacier mass change equilibration experiments (GlacierMIP3 - Equi)
 
-## 1. What are we planning to do, and why?**
+## 1. What are we planning to do, and why?
 
 GlacierMIP3 aims to address three fundamental questions:
 
