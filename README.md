@@ -4,7 +4,7 @@
 
 This repository holds data, computer code and documents used for the third coordinated experiment: **GlacierMIP3: Equilibration of glaciers under different climate states (GlacierMIP3 - Equi)**.
 
-All instructions of how to perform the experiments can be found in the [GlacierMIP3 protocol](GlacierMIP3_protocol.md). The submission file names and format conventions are described in the [netcdf file format notebook](netcdf_templates/netcdf_file_format.ipynb) with some sample files available in the [netcdf_templates][netcdf_templates] folder. 
+All instructions of how to perform the experiments can be found in the [GlacierMIP3 protocol](GlacierMIP3_protocol.md). The submission file names and format conventions are described in the [netcdf file format notebook](netcdf_templates/netcdf_file_format.ipynb) with some sample files available in the [netcdf_templates](netcdf_templates) folder. 
 
 Use [github issues](https://github.com/GlacierMIP/GlacierMIP3/issues) if you'd like to make suggestions about the project.
 
