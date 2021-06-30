@@ -56,7 +56,7 @@ end
 
 % Write out the files: same as on GitHub, but without the first row (header) and column (simulation year)
 % if glacier=='RGI60-11.00897' % Hintereisferner
-%     writematrix(data_shuffled,'test_RGI60-11.00897_ipsl-cm6a-lr_ssp585_tasAdjust_shuffled.csv')
+%     writematrix(data_shuffled,'test_shuffling/test_RGI60-11.00897_ipsl-cm6a-lr_ssp585_tasAdjust_shuffled.csv')
 % elseif glacier=='RGI60-16.02207' % Shallap
-%     writematrix(data_shuffled,'test_RGI60-16.02207_ipsl-cm6a-lr_ssp585_tasAdjust_shuffled.csv') 
+%     writematrix(data_shuffled,'test_shuffling/test_RGI60-16.02207_ipsl-cm6a-lr_ssp585_tasAdjust_shuffled.csv') 
 % end
