@@ -23,7 +23,7 @@ In detail, the simulations will consist of three main steps:
 - **Step 3**. Starting with the glacier geometry at the RGI date (observed or simulated, from step 1), and the bias-corrected CMIP6 GCM data (step 2), the **glacier equilibration** is simulated using the climatic forcing from the following **eight repeat-periods** : 
     `1851-1870`, `1901-1920`, `1951-1970`, `1995-2014`, `2021-2040`, `2041-2060`, `2061-2080` and `2081-2100`
   - To avoid a cyclicity in the volume/area time series, the years within the repeat reference period are **shuffled**. The order in which the calendar years are shuffled is imposed and needs to be read in from a csv-file (see [section 6](#section-6) for details)
-  - The equilibration experiments will be run for a **2000/5000-yr time period** (depending on the region, see [Table 1](#table-1)). This long time period will ensure that also large and gently sloping glaciers with long response times will reach equilibrium by the end of the simulation. The participants are asked to run the simulations for the entire time period. If the participants are not able to do so, please contact [us](mailto:zharry@ethz.ch,fabien.maussion@uibk.ac.at)
+  - The equilibration experiments will be run for a **2000/5000-yr time period** (depending on the region, see [Table 1](#table-1)). This long time period will ensure that also large and gently sloping glaciers with long response times will reach equilibrium by the end of the simulation. The participants are asked to run the simulations for the entire time period. If the participants are not able to do so, [please contact us](mailto:zharry@ethz.ch,fabien.maussion@uibk.ac.at)
 
 <a id="fig-1"></a>  
 ![](isimip3b_postprocessing_analysis/experiment-example.png)
@@ -64,7 +64,7 @@ In detail, the simulations will consist of three main steps:
 ## 4. Requested output <a id="section-4"></a>  
 
 - **Annual time series of regional glacier volume and area** for each experiment and for each RGI region. **This needs to be provided as an individual NetCDF file per RGI region and for every equilibration experiment**. The time series should be in calendar years: the volume and area should correspond to the state of that glacier on the 1st of January (i.e., date of the time stamp). An example of how the data should be outputted is available in the [netcdf_templates](netcdf_templates) folder (`Zekollari_rgi08_sum_2061-2080_ipsl-cm6a-lr_ssp585.nc`). 
-- When you are ready to submit your results, contact us. We will then inform you about how the data will be collected.
+- When you are ready to submit your results, [contact us](mailto:zharry@ethz.ch,fabien.maussion@uibk.ac.at). We will then inform you about how the data will be collected.
 - Optional: If possible, also provide the volume and area evolution at the individual glacier level. These data can be useful for a possible additional study to derive the response time of individual glaciers at the global scale, and how this relates to specific glacier characteristics. An example of how the data should be outputted is available in the [netcdf_templates](netcdf_templates) folder (`OGGM-dyn_rgi11_glaciers_1901-1920_ipsl-cm6a-lr_hist.nc`).
 
 The file naming and format convention of the netCDF files is described in detail in the [netcdf file format notebook](netcdf_templates/netcdf_file_format.ipynb).
