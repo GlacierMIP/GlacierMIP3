@@ -14,7 +14,7 @@ These questions are IPCC relevant, but have received relatively little attention
 
 ## 2. Experiments to be performed by all participants
 
-In a nutshell, each participant **starts from a (modelled or observed) glacier geometry at the Randolph Glacier Inventory date** (for example 2003 for Hintereisferner in the European Alps), after which different **constant climate forcing** scenarios are imposed. The imposed step-change forcings are defined by 20-yr time slices extracted from CMIP6 GCM data ([see Section 6](#section-6)). The forcing will be randomly repeated for a long time period, ensuring that the glaciers reach an equilibrium with the imposed climatic conditions. Results will allow us to relate equilibrium glacier volumes and areas to air temperature increases above pre-industrial levels.
+In a nutshell, each participant **starts from a (modelled or observed) glacier geometry at the glacier-specific Randolph Glacier Inventory date** (for example 2003 for Hintereisferner in the European Alps), after which different **constant climate forcing** scenarios are imposed. The imposed step-change forcings are defined by 20-yr time slices extracted from CMIP6 GCM data ([see Section 6](#section-6)). The forcing will be randomly repeated for a long time period, ensuring that the glaciers reach an equilibrium with the imposed climatic conditions. Results will allow us to relate equilibrium glacier volumes and areas to air temperature increases above pre-industrial levels.
 
 In detail, the simulations will consist of three main steps:
 
@@ -23,7 +23,7 @@ In detail, the simulations will consist of three main steps:
 - **Step 3**. Starting with the glacier geometry at the RGI date (observed or simulated, from step 1), and the bias-corrected CMIP6 GCM data (step 2), the **glacier equilibration** is simulated using the climatic forcing from the following **eight repeat-periods** : 
     `1851-1870`, `1901-1920`, `1951-1970`, `1995-2014`, `2021-2040`, `2041-2060`, `2061-2080` and `2081-2100`
   - To avoid a cyclicity in the volume/area time series, the years within the repeat reference period are **shuffled**. The order in which the calendar years are shuffled is imposed and needs to be read in from a csv-file (see [section 6](#section-6) for details)
-  - The equilibration experiments will be run for a **2000/5000-yr time period** (depending on the region, see [Table 1](#table-1)). This long time period will ensure that also large and gently sloping glaciers with long response times will reach equilibrium by the end of the simulation. The participants are asked to run the simulations for the entire time period. If the participants are not able to do so, please contact [Harry Zekollari](https://www.tudelft.nl/citg/over-faculteit/afdelingen/geoscience-remote-sensing/staff/researchers/dr-h-harry-zekollari).
+  - The equilibration experiments will be run for a **2000/5000-yr time period** (depending on the region, see [Table 1](#table-1)). This long time period will ensure that also large and gently sloping glaciers with long response times will reach equilibrium by the end of the simulation. The participants are asked to run the simulations for the entire time period. If the participants are not able to do so, please contact [Harry Zekollari](mailto:zharry@ethz.ch)
 
 <a id="fig-1"></a>  
 ![](isimip3b_postprocessing_analysis/experiment-example.png)
@@ -71,7 +71,7 @@ The file naming and format convention of the netCDF files is described in detail
 
 ## 5. Requirement for participation <a id="section-5"></a> 
 
-All participants are required, if possible, to provide the requested output ([Section 4](#section-4)) for all prescribed experiments that the model is able to handle (as some models will not be able to simulate glacier advance). The minimum requirement for participation is the computation of at least one complete RGI region. All data providers will be authors in the envisioned publication.
+All participants are required, if possible, to provide the requested output ([Section 4](#section-4)) for all prescribed experiments that the model is able to handle (as some models will not be able to simulate glacier advance). The minimum requirement for participation is the computation of at least one complete RGI region. All data providers will be authors in the envisioned publication. If you plan to participate, we ask you to [inform us](mailto:zharry@ethz.ch) before you start the experiments. 
 
 ## 6. GCM data and shuffling of the years <a id="section-6"></a> 
 
@@ -97,7 +97,6 @@ These timeseries are used by the modelling groups to generate the GCM timeseries
 
 ## 7. Timeline <a id="section-7"></a> 
 
-- 01 July 2021: call for contributions
 - 01 December 2021: submission deadline for results
 
 --- 
