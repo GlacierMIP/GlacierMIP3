@@ -23,7 +23,7 @@ In detail, the simulations will consist of three main steps:
 - **Step 3**. Starting with the glacier geometry at the RGI date (observed or simulated, from step 1), and the bias-corrected CMIP6 GCM data (step 2), the **glacier equilibration** is simulated using the climatic forcing from the following **eight repeat-periods** : 
     `1851-1870`, `1901-1920`, `1951-1970`, `1995-2014`, `2021-2040`, `2041-2060`, `2061-2080` and `2081-2100`
   - To avoid a cyclicity in the volume/area time series, the years within the repeat reference period are **shuffled**. The order in which the calendar years are shuffled is imposed and needs to be read in from a csv-file (see [section 6](#section-6) for details)
-  - The equilibration experiments will be run for a **2000/5000-yr time period** (depending on the region, see [Table 1](#table-1)). This long time period will ensure that also large and gently sloping glaciers with long response times will reach equilibrium by the end of the simulation. The participants are asked to run the simulations for the entire time period. If the participants are not able to do so, [please contact us](mailto:zharry@ethz.ch,fabien.maussion@uibk.ac.at)
+  - The equilibration experiments will be run for a **2000/5000-yr time period** (depending on the region, see [Table 1](#table-1)). This long time period will ensure that also large and gently sloping glaciers with long response times will reach equilibrium by the end of the simulation. The participants are asked to run the simulations for the entire time period. If the participants are not able to do so, [please contact us](mailto:zharry@ethz.ch,fabien.maussion@uibk.ac.at).
 
 <a id="fig-1"></a>  
 ![](isimip3b_postprocessing_analysis/experiment-example.png)
