@@ -12,6 +12,8 @@ GlacierMIP3 aims to address three fundamental questions:
 
 These questions are IPCC relevant, but have received relatively little attention in the literature (e.g., [Marzeion et al. 2018, Nat. Clim. Change](https://doi.org/10.1038/s41558-018-0093-1)). The first question provides information about committed mass loss, while the second and third are policy-relevant since climate agreements typically target a specific maximum temperature increase and provides insight to the fundamental question of global glacier mass climate sensitivity and response time.
 
+GlacierMIP3 and its experimental design and protocol were developed in 2020/2021 by Harry Zekollari (chair), Fabien Maussion, Lilian Schuster, Regine Hock and Ben Marzeion. 
+
 ## 2. Experiments to be performed by all participants
 
 In a nutshell, each participant **starts from a (modelled or observed) glacier geometry at the glacier-specific Randolph Glacier Inventory date** (for example 2003 for Hintereisferner in the European Alps), after which different **constant climate forcing** scenarios are imposed. The imposed step-change forcings are defined by 20-yr time slices extracted from CMIP6 GCM data ([see Section 6](#section-6)). The forcing will be randomly repeated for a long time period, ensuring that the glaciers reach an equilibrium with the imposed climatic conditions. Results will allow us to relate equilibrium glacier volumes and areas to air temperature increases above pre-industrial levels.
