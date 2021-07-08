@@ -10,5 +10,5 @@ Use [github issues](https://github.com/GlacierMIP/GlacierMIP3/issues) if you'd l
 
 For data and technical questions contact:
 - [Harry Zekollari](mailto:zharry@ethz.ch)
-- [Lilian Schuster](mailto:fabien.maussion@uibk.ac.at)
-- [Fabien Maussion](mailto:Lilian.Schuster@student.uibk.ac.at)
+- [Lilian Schuster](mailto:Lilian.Schuster@student.uibk.ac.at)
+- [Fabien Maussion](mailto:fabien.maussion@uibk.ac.at)
