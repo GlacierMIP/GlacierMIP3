@@ -6,7 +6,8 @@ This repository holds data, computer code, the description of the experimental p
 
 All instructions of how to perform the experiments can be found in the [GlacierMIP3 protocol](GlacierMIP3_protocol.md). The submission file names and format conventions are described in the [netcdf file format notebook](netcdf_templates/netcdf_file_format.ipynb) with some sample files available in the [netcdf_templates](netcdf_templates) folder. 
 
-Use [github issues](https://github.com/GlacierMIP/GlacierMIP3/issues) if you'd like to make suggestions about the project.
+A list of [Frequently Asked Questions (FAQ)](GlacierMIP3_FAQ.md) is available. If you have other questions, or if you'd like to make suggestions about the project, use 
+[github issues](https://github.com/GlacierMIP/GlacierMIP3/issues).
 
 For data and technical questions contact:
 - [Harry Zekollari](mailto:zharry@ethz.ch)
