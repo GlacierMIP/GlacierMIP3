@@ -12,9 +12,11 @@ GlacierMIP3 aims to address three fundamental questions:
 
 These questions are IPCC relevant, but have received relatively little attention in the literature (e.g., [Marzeion et al. 2018, Nat. Clim. Change](https://doi.org/10.1038/s41558-018-0093-1)). The first question provides information about committed mass loss, while the second and third are policy-relevant since climate agreements typically target a specific maximum temperature increase and provides insight to the fundamental question of global glacier mass climate sensitivity and response time.
 
+The experimental protocol below was developed as part of GlacierMIP by Harry Zekollari (chair), Fabien Maussion, Lilian Schuster, Regine Hock and Ben Marzeion. 
+
 ## 2. Experiments to be performed by all participants
 
-In a nutshell, each participant **starts from a (modelled or observed) glacier geometry at the Randolph Glacier Inventory date** (for example 2003 for Hintereisferner in the European Alps), after which different **constant climate forcing** scenarios are imposed. The imposed step-change forcings are defined by 20-yr time slices extracted from CMIP6 GCM data ([see Section 6](#section-6)). The forcing will be randomly repeated for a long time period, ensuring that the glaciers reach an equilibrium with the imposed climatic conditions. Results will allow us to relate equilibrium glacier volumes and areas to air temperature increases above pre-industrial levels.
+In a nutshell, each participant **starts from a (modelled or observed) glacier geometry at the glacier-specific Randolph Glacier Inventory date** (for example 2003 for Hintereisferner in the European Alps), after which different **constant climate forcing** scenarios are imposed. The imposed step-change forcings are defined by 20-yr time slices extracted from CMIP6 GCM data ([see Section 6](#section-6)). The forcing will be randomly repeated for a long time period, ensuring that the glaciers reach an equilibrium with the imposed climatic conditions. Results will allow us to relate equilibrium glacier volumes and areas to air temperature increases above pre-industrial levels.
 
 In detail, the simulations will consist of three main steps:
 
@@ -23,7 +25,7 @@ In detail, the simulations will consist of three main steps:
 - **Step 3**. Starting with the glacier geometry at the RGI date (observed or simulated, from step 1), and the bias-corrected CMIP6 GCM data (step 2), the **glacier equilibration** is simulated using the climatic forcing from the following **eight repeat-periods** : 
     `1851-1870`, `1901-1920`, `1951-1970`, `1995-2014`, `2021-2040`, `2041-2060`, `2061-2080` and `2081-2100`
   - To avoid a cyclicity in the volume/area time series, the years within the repeat reference period are **shuffled**. The order in which the calendar years are shuffled is imposed and needs to be read in from a csv-file (see [section 6](#section-6) for details)
-  - The equilibration experiments will be run for a **2000/5000-yr time period** (depending on the region, see [Table 1](#table-1)). This long time period will ensure that also large and gently sloping glaciers with long response times will reach equilibrium by the end of the simulation. The participants are asked to run the simulations for the entire time period. If the participants are not able to do so, please contact [Harry Zekollari](https://www.tudelft.nl/citg/over-faculteit/afdelingen/geoscience-remote-sensing/staff/researchers/dr-h-harry-zekollari).
+  - The equilibration experiments will be run for a **2000/5000-yr time period** (depending on the region, see [Table 1](#table-1)). This long time period will ensure that also large and gently sloping glaciers with long response times will reach equilibrium by the end of the simulation. The participants are asked to run the simulations for the entire time period. If the participants are not able to do so, [please contact us](mailto:zharry@ethz.ch,fabien.maussion@uibk.ac.at).
 
 <a id="fig-1"></a>  
 ![](isimip3b_postprocessing_analysis/experiment-example.png)
@@ -63,15 +65,15 @@ In detail, the simulations will consist of three main steps:
 
 ## 4. Requested output <a id="section-4"></a>  
 
-- **Annual time series of regional glacier volume and area** for each experiment and for each RGI region. **This needs to be provided as an individual NetCDF file per RGI region and for every equilibration experiment**. The time series should be in calendar years: the volume and area should correspond to the state of that glacier on the 1st of January (i.e., date of the time stamp). An example of how the data should be outputted is available in the [netcdf_templates][netcdf_templates] folder (`Zekollari_rgi08_sum_2061-2080_ipsl-cm6a-lr_ssp585.nc`). 
-- When you are ready to submit your results, contact us. We will then inform you about how the data will be collected.
-- Optional: If possible, also provide the volume and area evolution at the individual glacier level. These data can be useful for a possible additional study to derive the response time of individual glaciers at the global scale, and how this relates to specific glacier characteristics. An example of how the data should be outputted is available in the [netcdf_templates][netcdf_templates] folder (`OGGM-dyn_rgi11_glaciers_1901-1920_ipsl-cm6a-lr_hist.nc`).
+- **Annual time series of regional glacier volume and area** for each experiment and for each RGI region. **This needs to be provided as an individual NetCDF file per RGI region and for every equilibration experiment**. The time series should be in calendar years: the volume and area should correspond to the state of that glacier on the 1st of January (i.e., date of the time stamp). An example of how the data should be outputted is available in the [netcdf_templates](netcdf_templates) folder (`Zekollari_rgi08_sum_2061-2080_ipsl-cm6a-lr_ssp585.nc`). 
+- When you are ready to submit your results, [contact us](mailto:zharry@ethz.ch,fabien.maussion@uibk.ac.at). We will then inform you about how the data will be collected.
+- Optional: If possible, also provide the volume and area evolution at the individual glacier level. These data can be useful for a possible additional study to derive the response time of individual glaciers at the global scale, and how this relates to specific glacier characteristics. An example of how the data should be outputted is available in the [netcdf_templates](netcdf_templates) folder (`OGGM-dyn_rgi11_glaciers_1901-1920_ipsl-cm6a-lr_hist.nc`).
 
 The file naming and format convention of the netCDF files is described in detail in the [netcdf file format notebook](netcdf_templates/netcdf_file_format.ipynb).
 
 ## 5. Requirement for participation <a id="section-5"></a> 
 
-All participants are required, if possible, to provide the requested output ([Section 4](#section-4)) for all prescribed experiments that the model is able to handle (as some models will not be able to simulate glacier advance). The minimum requirement for participation is the computation of at least one complete RGI region. All data providers will be authors in the envisioned publication.
+All participants are required, if possible, to provide the requested output ([Section 4](#section-4)) for all prescribed experiments (i.e., 80 in total: 5 GCMs x 4 historical time slices = 20 and 5 GCMs x 4 projection time slices x 3 ssp scenarios = 60 different experiments) that the model is able to handle (as some models will not be able to simulate glacier advance). The minimum requirement for participation is the computation of at least one complete RGI region. All data providers will be authors in the envisioned publication. If you plan to participate, we ask you to [inform us](mailto:zharry@ethz.ch,fabien.maussion@uibk.ac.at) before you start the experiments. 
 
 ## 6. GCM data and shuffling of the years <a id="section-6"></a> 
 
@@ -79,9 +81,9 @@ The climatic forcing comes from the latest phase of the **[The Inter-Sectoral Im
 
 For **ease of use**, the data has been transformed to the **monthly resolution for precipitation, temperature and the std. dev. of the daily temperature within a month** [(link to applied code)](isimip3b_postprocessing_analysis/isimip3b_postprocess_to_monthly.ipynb), and can directly be accessed here: [https://cluster.klima.uni-bremen.de/~lschuster/isimip3b/](https://cluster.klima.uni-bremen.de/~lschuster/isimip3b/) (total of ca. 80 GB). For models using monthly temperature and precipitation, we suggest directly using these processed data. Those who need other variables (than temperature and precipitation), or who need the data at another time resolution, should download the original data from the [ISIMIP repository](https://esg.pik-potsdam.de/search/isimip/) (note: very large data volume given the daily resolution).
 
-For each of the 8 time periods considered (1851-1870, 1901-1920, 1951-1970, 1995-2014, 2021-2040, 2061-2080, 2081-2100), the order in which the calendar years are shuffled is imposed and needs to be read from the [shuffling/shuffled_years_GlacierMIP3.csv](shuffling/shuffled_years_GlacierMIP3.csv) file.
+For each of the 8 time periods considered (1851-1870, 1901-1920, 1951-1970, 1995-2014, 2021-2040, 2041-2060, 2061-2080, 2081-2100), the order in which the calendar years are shuffled is imposed and needs to be read from the [shuffling/shuffled_years_GlacierMIP3.csv](shuffling/shuffled_years_GlacierMIP3.csv) file. 
 
-These timeseries are used by the modelling groups to generate the GCM timeseries at the glacier locations for their models. **As a check** (to make sure that all participants agree on how to generate the timeseries),  we provide two sample timeseries in  [shuffling/test_shuffling](shuffling/test_shuffling) folder for two glaciers (Hintereisferner in Austria and Glaciar Shallap in Peru). Additionally, the [python](shuffling/shuffling_workflow_python.ipynb) and [MATLAB](shuffling/shuffling_workflow_matlab.m) codes that were used to generate these test time series are provided as a template for your own data ingestion code.
+These timeseries are used by the modelling groups to generate the GCM timeseries at the glacier locations for their models. That means you have to shuffle the provided climate data yourself using the given calendar year order of the [shuffling/shuffled_years_GlacierMIP3.csv](shuffling/shuffled_years_GlacierMIP3.csv) file. **As a check** (to make sure that all participants agree on how to generate the timeseries),  we provide two sample timeseries in  [shuffling/test_shuffling](shuffling/test_shuffling) folder for two glaciers (Hintereisferner in Austria and Glaciar Shallap in Peru). Additionally, the [python](shuffling/shuffling_workflow_python.ipynb) and [MATLAB](shuffling/shuffling_workflow_matlab.m) codes that were used to generate these test time series are provided as a template for your own data ingestion code.
 
 
 <a id="table-2"></a>  
@@ -97,7 +99,6 @@ These timeseries are used by the modelling groups to generate the GCM timeseries
 
 ## 7. Timeline <a id="section-7"></a> 
 
-- 01 July 2021: call for contributions
 - 01 December 2021: submission deadline for results
 
 --- 
