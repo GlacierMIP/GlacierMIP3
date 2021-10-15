@@ -25,7 +25,7 @@ In detail, the simulations will consist of three main steps:
 - **Step 3**. Starting with the glacier geometry at the RGI date (observed or simulated, from step 1), and the bias-corrected CMIP6 GCM data (step 2), the **glacier equilibration** is simulated using the climatic forcing from the following **eight repeat-periods** : 
     `1851-1870`, `1901-1920`, `1951-1970`, `1995-2014`, `2021-2040`, `2041-2060`, `2061-2080` and `2081-2100`
   - To avoid a cyclicity in the volume/area time series, the years within the repeat reference period are **shuffled**. The order in which the calendar years are shuffled is imposed and needs to be read in from a csv-file (see [section 6](#section-6) for details)
-  - The equilibration experiments will be run for a **2000/5000-yr time period** (depending on the region, see [Table 1](#table-1)). This long time period will ensure that also large and gently sloping glaciers with long response times will reach equilibrium by the end of the simulation. The participants are asked to run the simulations for the entire time period. If the participants are not able to do so, [please contact us](mailto:zharry@ethz.ch,fabien.maussion@uibk.ac.at).
+  - The equilibration experiments will be run for a **2000/5000-yr time period** (depending on the region, see [Table 1](#table-1)). This long time period will ensure that also large and gently sloping glaciers with long response times will reach equilibrium by the end of the simulation. The participants are asked to run the simulations for the entire time period. If the participants are not able to do so, refer to the [FAQ](https://github.com/GlacierMIP/GlacierMIP3/blob/main/GlacierMIP3_FAQ.md) and [please contact us](mailto:zharry@ethz.ch,fabien.maussion@uibk.ac.at).
 
 <a id="fig-1"></a>  
 ![](isimip3b_postprocessing_analysis/experiment-example.png)
@@ -83,7 +83,7 @@ For **ease of use**, the data has been transformed to the **monthly resolution f
 
 For each of the 8 time periods considered (1851-1870, 1901-1920, 1951-1970, 1995-2014, 2021-2040, 2041-2060, 2061-2080, 2081-2100), the order in which the calendar years are shuffled is imposed and needs to be read from the [shuffling/shuffled_years_GlacierMIP3.csv](shuffling/shuffled_years_GlacierMIP3.csv) file. 
 
-These timeseries are used by the modelling groups to generate the GCM timeseries at the glacier locations for their models. That means you have to shuffle the provided climate data yourself using the given calendar year order of the [shuffling/shuffled_years_GlacierMIP3.csv](shuffling/shuffled_years_GlacierMIP3.csv) file. **As a check** (to make sure that all participants agree on how to generate the timeseries),  we provide two sample timeseries in  [shuffling/test_shuffling](shuffling/test_shuffling) folder for two glaciers (Hintereisferner in Austria and Glaciar Shallap in Peru). Additionally, the [python](shuffling/shuffling_workflow_python.ipynb) and [MATLAB](shuffling/shuffling_workflow_matlab.m) codes that were used to generate these test time series are provided as a template for your own data ingestion code.
+These timeseries are used by the modelling groups to generate the GCM timeseries at the glacier locations for their models. This means that you have to shuffle the provided climate data yourself using the given calendar year order of the [shuffling/shuffled_years_GlacierMIP3.csv](shuffling/shuffled_years_GlacierMIP3.csv) file. **As a check** (to make sure that all participants agree on how to generate the timeseries),  we provide two sample timeseries in  [shuffling/test_shuffling](shuffling/test_shuffling) folder for two glaciers (Hintereisferner in Austria and Glaciar Shallap in Peru). Additionally, the [python](shuffling/shuffling_workflow_python.ipynb) and [MATLAB](shuffling/shuffling_workflow_matlab.m) codes that were used to generate these test time series are provided as a template for your own data ingestion code.
 
 
 <a id="table-2"></a>  
@@ -99,7 +99,7 @@ These timeseries are used by the modelling groups to generate the GCM timeseries
 
 ## 7. Timeline <a id="section-7"></a> 
 
-- 01 December 2021: submission deadline for results
+- 01 February 2022: submission deadline for results
 
 --- 
 <a id="suppl-fig-1"></a>  
