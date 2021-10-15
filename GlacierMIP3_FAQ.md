@@ -42,7 +42,7 @@ For some reasons, some glaciers simply can’t be computed successfully: when th
 
 If you encounter computational limitations, you may reduce the total computational time through several methods. For more information, refer to the [FAQ: “The simulations are computationally expensive. What can I do to reduce the computational expenses?](#faq-sim-expensive)”. If, after having opted for these solutions you still encounter computational limits, or if any other problems hinder you from performing all experiments, we ask you to follow the following priority list:
 - GCMs: (1) ukesm1-0-ll_r1i1p1f2, (2) ipsl-cm6a-lr_r1i1p1f1, (3) mri-esm2-0_r1i1p1f1, (4) mpi-esm1-2-hr_r1i1p1f1 and (5) gfdl-esm4_r1i1p1f1
-- SSPs: (1) ssp585, (2) ssp370 and (3) ssp126
+- SSPs: (1) ssp585, (2) historical, (3) ssp370 and (4) ssp126
 This priority list was chosen by analyzing the climatic data at the global scale, with the goal to sample the largest spectrum of global mean temperature levels (vs. pre-industrial values). By defining a priority list, we aim to increase the overlap in the forcing products used by the various participants, allowing for a better intercomparison.
 
 Use [github issues](https://github.com/GlacierMIP/GlacierMIP3/issues) if you'd like to make suggestions about the project or if you want us to address in this [FAQ] section
