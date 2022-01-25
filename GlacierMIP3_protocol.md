@@ -34,7 +34,7 @@ In detail, the simulations will consist of three main steps:
 ## 3. Standardization of experiments
 
 - **Glacier inventory data** from RGI6.0
-- **Ice thickness** : we suggest using the consensus estimate from [Farinotti et al., 2019 (Nature Geoscience)](https://doi.org/10.1038/s41561-019-0300-3), if possible (not possible for some models that evolve the volumes). Participants can also choose to use their (previously) calibrated models and do not need to update their initial ice thicknesses to the consensus estimate.
+- **Ice thickness** : we suggest using the consensus estimate from [Farinotti et al., 2019 (Nature Geoscience)](https://doi.org/10.1038/s41561-019-0300-3), if possible (not possible for some models that evolve the volumes). You can find a list of the consensus ice volume estimates for all RGI glaciers in [this csv-file](https://cluster.klima.uni-bremen.de/~oggm/g2ti/rgi60_itmix_df.csv). Participants can also choose to use their (previously) calibrated models and do not need to update their initial ice thicknesses to the consensus estimate.
 - **Greenland periphery** : all glaciers with connectivity level 0 and 1 should be included, level 2 glaciers should be excluded (as was the case for [GlacierMIP2](https://doi.org/10.1029/2019EF001470))
 - Ideally, participants cover all **RGI regions** ; however, the minimum requirement for participation is the computation of at least one complete RGI region.
 
