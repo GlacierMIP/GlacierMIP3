@@ -1,0 +1,138 @@
+
+### In steady state (all glacier models) ### running again 16 Sept
+
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 'Global'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '01'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '02'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '03'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '04'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '05'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '06'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '07'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '08'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '09'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '10'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '11'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '12'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '13'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '14'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '15'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '16'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '17'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '18'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '19'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 'only_reg_w_global_models'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 'only_reg_w_global_glogemflow3d'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 'only_reg_w_global_glogemflow3d_kraaijenbrink'
+
+### After 100 simulation years (all glacier models) # ### running again 16 Sept
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 100 'Global'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 100 '01'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 100 '02'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 100 '03'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 100 '04'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 100 '05'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 100 '06'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 100 '07'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 100 '08'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 100 '09'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 100 '10'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 100 '11'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 100 '12'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 100 '13'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 100 '14'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 100 '15'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 100 '16'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 100 '17'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 100 '18'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 100 '19'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 100 'only_reg_w_global_models'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 100 'only_reg_w_global_glogemflow3d'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 100 'only_reg_w_global_glogemflow3d_kraaijenbrink'
+
+### After 500 simulation years (all glacier models) # ### running again 16 Sept 
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 500 'Global' 
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 500 '01'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 500 '02'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 500 '03'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 500 '04'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 500 '05'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 500 '06'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 500 '07'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 500 '08'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 500 '09'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 500 '10'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 500 '11'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 500 '12'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 500 '13'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 500 '14'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 500 '15'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 500 '16'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 500 '17'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 500 '18'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 500 '19'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 500 'only_reg_w_global_models'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 500 'only_reg_w_global_glogemflow3d'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 500 'only_reg_w_global_glogemflow3d_kraaijenbrink'
+
+### In steady-state (but only with the global glacier models) ### running again 16 Sept
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 'only_global'  
+
+
+### In steady-state - fitted after regional temperature changes (with all glacier models)  ## ### running again 16 Sept
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 'Global' 'regional_glacier'   
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '01' 'regional_glacier'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '02' 'regional_glacier'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '03' 'regional_glacier'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '04' 'regional_glacier'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '05' 'regional_glacier'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '06' 'regional_glacier'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '07' 'regional_glacier'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '08' 'regional_glacier'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '09' 'regional_glacier'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '10' 'regional_glacier'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '11' 'regional_glacier'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '12' 'regional_glacier'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '13' 'regional_glacier'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '14' 'regional_glacier'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '15' 'regional_glacier'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '16' 'regional_glacier'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '17' 'regional_glacier'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '18' 'regional_glacier'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 '19' 'regional_glacier'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 'only_reg_w_global_models' 'regional_glacier'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 'only_reg_w_global_glogemflow3d' 'regional_glacier'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 'only_reg_w_global_glogemflow3d_kraaijenbrink' 'regional_glacier'
+
+
+
+##################OLD!!!
+
+#### old -> needs to be updated ... 
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 'all'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 100 'all'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 500 'all'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 50 'all'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 300 'all'
+
+
+# test
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 'only_global'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 100 'only_global'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 500 'only_global'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 50 'only_global'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 300 'only_global'
+
+
+### compute aggregate region uncertainties
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 'only_reg_w_global_models'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 'only_reg_w_global_glogemflow3d'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 5000 'only_reg_w_global_glogemflow3d_kraaijenbrink'
+
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 100 'only_reg_w_global_models'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 100 'only_reg_w_global_glogemflow3d'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 100 'only_reg_w_global_glogemflow3d_kraaijenbrink'
+
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 500 'only_reg_w_global_models'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 500 'only_reg_w_global_glogemflow3d'
+sbatch slurm_lowess_percentile_interval_added_uncertainties.slurm 500 'only_reg_w_global_glogemflow3d_kraaijenbrink'
