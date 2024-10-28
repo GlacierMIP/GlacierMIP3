@@ -16,6 +16,7 @@ This community estimate manuscript resulted out of GlacierMIP3:
 Code for the community estimate paper below is in the following folders with respective READMEs:
 - [0_pre_post_processing](0_pre_post_processing) documented in [README_0_pre_post_processing.md](README_0_pre_post_processing.md)
 - [A_community_estimate_paper_analysis](A_community_estimate_paper_analysis) documented in [README_A_community_estimate_paper_analysis.md](README_A_community_estimate_paper_analysis.md)
+   - Figures are only available from the manuscript. However, figure variants (figure simplifications of the Fig. 3 worldmap that are useful for presentations and outreach) and variants of Supplementary Fig. 5 are included in this [folder](A_community_estimate_paper_analysis/figures/supplements/only_github_supplements)
 
 
 The regional GlacierMIP3 glacier projections for the different glacier models and experiments are available and documented via [LINK will be added soon](LINK-ZENODO). In addition, postprocessed data for the community estimate manuscript are included there. The data documentation is also available in [README_data.md](README_data.md).

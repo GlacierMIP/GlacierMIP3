@@ -178,16 +178,16 @@ All `lowess_fit_rel_2020*.csv` files have the following columns:
 | `regional_volume_m3_itmix_vs_2020`                  | Ratio of glacier volume at RGI6 inventory date vs volume in 2020 (est. from Farinotti et al. 2019 & Hugonnet et al., 2021) (reg) - no unit |
 | `rgi_year_weighted_median`                          | RGI year (reg-aw) - unit: year                                              |
 | **Estimates from glacier simulation changes (data from GlacierMIP3):** |                                                                             |
-| `resp_time_-50%_1_5_deg`                            | Response time scale (~1.5°C, 50%, reg) - unit: years                        |
-| `resp_time_-50%_3_0_deg`                            | Response time scale (~3.0°C, 50%, reg) - unit: years                        |
-| `resp_time_-80%_1_5_deg`                            | Response time scale (~1.5°C, 80%, reg) - unit: years                        |
-| `resp_time_-80%_3_0_deg`                            | Response time scale (~3.0°C, 80%, reg) - unit: years                        |
+| `resp_time_-50%_1_5_deg`                            | Response timescale (~1.5°C, 50%, reg) - unit: years                        |
+| `resp_time_-50%_3_0_deg`                            | Response timescale (~3.0°C, 50%, reg) - unit: years                        |
+| `resp_time_-80%_1_5_deg`                            | Response timescale (~1.5°C, 80%, reg) - unit: years                        |
+| `resp_time_-80%_3_0_deg`                            | Response timescale (~3.0°C, 80%, reg) - unit: years                        |
 | `resp_time_-50%_1_5_deg_only_global_models`         | Same as above but only considering glacier models with global simulations   |
 | `resp_time_-50%_3_0_deg_only_global_models`         | Same as above                                                               |
 | `resp_time_-80%_1_5_deg_only_global_models`         | Same as above                                                               |
 | `resp_time_-80%_3_0_deg_only_global_models`         | Same as above                                                               |
-
-
+| `ice_loss_1.2°C_%_rel_2020`         | Committed glacier mass loss at ΔTemp=+1.2°C (rel. to 2020) - unit: %|
+| `ice_loss_slope_between_1.5_and_3.0_per_tenth_degC_rel_2020`         | Sensitivity of committed glacier mass loss (ΔTemp=1.5 to 3.0°C) - unit : % per 0.1°C|
 
 *Abbreviations: “10/100 largest” refers to the 10/100 glaciers with the largest initial glacier mass at inventory date according to the estimate by Farinotti et al. 2021. ”reg-aw” refers to regionally glacier-area weighted, “reg” refers to regional, “avg” refers to average, “Temp” refers to temperature, “Prcp” refers to precipitation.*
 > used for Extended Data Table 1 and 3, and for Fig. 4, Extended Data Fig. 2, Supplementary Fig. 4, and many other figures
