@@ -2,6 +2,8 @@
 
 This document provides data documentation for the Glacier Model Intercomparison Project 3 (GlacierMIP3), which focused on global glacier mass change equilibration experiments.
 
+[GlacierMIP](https://www.climate-cryosphere.org/mips/glaciermip/about-glaciermip) is a framework for a coordinated intercomparison of global-scale glacier mass change models to foster model improvements and reduce uncertainties in global glacier projections. It is running as a 'Targeted Activity' under the auspices of the Climate and Cryosphere Project [CliC](https://www.climate-cryosphere.org/), a core project of the World Climate Research Programme (WCRP).
+
 For detailed information about the GlacierMIP3 experimental design, please refer to the GlacierMIP3 protocol.
 
 The dataset includes the regional per-glacier-model simulations as submitted by the modeling groups, encapsulated in the main file `GMIP3_reg_glacier_model_data/glacierMIP3_Feb12_2024_models_all_rgi_regions_sum.nc`. Additionally, it features post-processed and aggregated data derived from GlacierMIP3, or in combination with other studies, which is used for the analyses and visualisations presented in the manuscript.
@@ -11,7 +13,7 @@ The dataset includes the regional per-glacier-model simulations as submitted by 
 
 When using this dataset, please cite both the Zenodo dataset and the submitted study above. Note that we are working currently on another study to analyse more the glacier model differences. 
 
-To assist potential data users, we have included a jupyter notebook (`gmip3_data_example_use_cases.ipynb`) that guides you through some simple use cases. We may adapt the data structure and improve the documentation during the review phase. If you have any questions, please [contact us](mailto:lilian.schuster@uibk.ac.at,harry.zekollari@vub.be).
+To assist potential data users, we have included a jupyter notebook (`gmip3_data_example_use_cases.ipynb`) that guides you through some simple use cases. We may adapt the data structure and improve the documentation during the review phase. If you have any questions or suggestions, please [contact us](mailto:lilian.schuster@uibk.ac.at,harry.zekollari@vub.be).
 
 
 Please note that the data described is only available through the published Zenodo dataset (link will be added). The code used to generate this data and to conduct the analyses for the manuscript mentioned above is available at [https://github.com/GlacierMIP/GlacierMIP3](https://github.com/GlacierMIP/GlacierMIP3). We have retained this README_data also in the GitHub repository for reference. 
@@ -68,7 +70,8 @@ Warming above pre-industrial for the different experiments (either on a global m
 | `region`                                  | Aggregated region over which the warming was estimated. Global mean average (`global`),                |
 |                                           | global glacier-area weighted mean (`global_glacier`), regional glacier-area weighted mean (e.g. `RGI11_glacier`)  |
 |                                           | `temp_ch_ipcc_ar6_isimip3b` does not have this column as all entries are `global`                     |
-| `temp_ch_ipcc`                           | Warming above pre-industrial (1850-1900) using the IPCC AR6 definition - unit: °C                     |
+| `temp_ch_ipcc`                           | Warming above pre-industrial (1850-1900) using the IPCC AR6 definition (i.e. assume +0.69°C between 1850 and 1986-2005 - unit: °C  
+                                                                    |
 
 
 **The following different csv files are available:** 
@@ -76,6 +79,7 @@ Warming above pre-industrial for the different experiments (either on a global m
 - > used in most figures and analysis
 
 `climate_input_data/temp_ch_ipcc_ar6_isimip3b_glacier_regionally.csv`: all regions
+- Attention: here we assume regionally equally +0.69°C of warming between 1850 and 1986 to 2005. For the warming ratio computation that is shown in e.g. Fig. 2 or Fig. 4, we substract the 0.69°C again to instead just show the regional warming ratio to the actual regional 1986 to 2005 estimates. 
 - > used e.g. for Supplementary Fig. 1, Fig. 2, 
 
 
@@ -192,7 +196,7 @@ All `lowess_fit_rel_2020*.csv` files have the following columns:
 *Abbreviations: “10/100 largest” refers to the 10/100 glaciers with the largest initial glacier mass at inventory date according to the estimate by Farinotti et al. 2021. ”reg-aw” refers to regionally glacier-area weighted, “reg” refers to regional, “avg” refers to average, “Temp” refers to temperature, “Prcp” refers to precipitation.*
 > used for Extended Data Table 1 and 3, and for Fig. 4, Extended Data Fig. 2, Supplementary Fig. 4, and many other figures
 
-We also use for a few supplementary figures, data from other studies where we sometimes got the data via personal communication. These files are shortly described in data_from_others/, however, they are only available via [https://cluster.klima.uni-bremen.de/~lschuster/GlacierMIP3/data/data_from_others](https://cluster.klima.uni-bremen.de/~lschuster/GlacierMIP3/data/data_from_others). 
+We also use for a few supplementary figures, data from other studies where we sometimes got the data via personal communication. These files are shortly described in `data_from_others/README_data_from_others.md`. However, they are only available via [https://cluster.klima.uni-bremen.de/~lschuster/GlacierMIP3/data/data_from_others](https://cluster.klima.uni-bremen.de/~lschuster/GlacierMIP3/data/data_from_others). 
 
 -------
 The per-glacier model glacier volume and area estimates are at the moment only available for the models `PyGEM-OGGM_v13` and `OGGM_v16`. If you have interest in that data, please [contact us](mailto:lilian.schuster@uibk.ac.at,harry.zekollari@vub.be). 
