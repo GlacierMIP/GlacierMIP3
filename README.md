@@ -28,4 +28,4 @@ When using this dataset, please cite both the Zenodo dataset and the submitted s
 For data and technical questions contact:
 - [Harry Zekollari](mailto:zharry@ethz.ch)
 - [Lilian Schuster](mailto:Lilian.Schuster@uibk.ac.at)
-- [Fabien Maussion](mailto:fabien.maussion@uibk.ac.at)
+- [Fabien Maussion](mailto:fabien.maussion@bristol.ac.uk)
