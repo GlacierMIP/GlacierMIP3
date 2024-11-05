@@ -6,6 +6,11 @@ This document provides data documentation for the Glacier Model Intercomparison 
 
 For detailed information about the GlacierMIP3 experimental design, please refer to the GlacierMIP3 protocol.
 
+---
+**If you just want to extract the data of supplementary table 1 or 3, you can directly use the corresponding csv files (`table_S1a.csv`, `table_S1b.csv`, `table_S3.csv`).**  
+
+---
+
 The dataset includes the regional per-glacier-model simulations as submitted by the modeling groups, encapsulated in the main file `GMIP3_reg_glacier_model_data/glacierMIP3_Feb12_2024_models_all_rgi_regions_sum.nc`. Additionally, it features post-processed and aggregated data derived from GlacierMIP3, or in combination with other studies, which is used for the analyses and visualisations presented in the manuscript.
 
 > Zekollari*, H., Schuster*, L., Maussion, F., Hock, R., Marzeion, B., and the GlacierMIP3 consortium ...TODO-add all names (submitted). Current climate policies will affect multi-century global glacier change. (link to preprint will be added once available), 2024.

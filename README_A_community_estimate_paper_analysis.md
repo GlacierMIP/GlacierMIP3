@@ -71,5 +71,5 @@ To run the code, you need to download the GlacierMIP3 data from Zenodo. For some
 ### 6: Create supplementary data tables
 `6_csv_tables_creation.ipynb`
 - creates **supplementary data table 3** about current and past volume changes (+ some regional characteristics from RGI6, such as regional glacier surface slope)
-- creates **supplementary data table 3** with steady-state regional glacier mass and response timescale estimates with uncertainties ...
+- creates **supplementary data table 1** with steady-state regional glacier mass and response timescale estimates with uncertainties ...
 - tables are saved as .xlsx files for the manuscript and then some minor formatting adjustments were manually done
