@@ -1,6 +1,6 @@
 # 0: Preprocessing and postprocessing of climatic data, glacier model projections, and LOWESS fits with temperature changes
 
-Note that you need the package versions as in mamba_packages_oggm_gmip3_sept20_2024.yml (pandas 2.1.3, xarray 2023.11.0, numpy 1.24.4). For some postprocessing, you also need to install oggm (e.g. v1.6.2) /progressbar2 and for the lowess fits, you need moepy (e.g. v1.1.4). That means you could do the following steps:
+Note that you need the package versions as in mamba_packages_oggm_gmip3_sept20_2024.yml (pandas 2.1.3, xarray 2023.11.0, numpy 1.24.4). For some postprocessing, you also need to install oggm (e.g. v1.6.2) and progressbar2 and for the lowess fits, you need moepy (e.g. v1.1.4). That means you could do the following steps:
 > mamba create --name <gmip3_env> --file <mamba_packages_oggm_gmip3_sept20_2024.yml> 
 > mamba activate gmip3_env
 > pip install --user --no-deps moepy oggm progressbar2
@@ -79,5 +79,5 @@ Note that you need the package versions as in mamba_packages_oggm_gmip3_sept20_2
 - **Output:** `3_shift_summary_region_characteristics.csv` (more in `README_data.md`)
   
 ---
-The pre- and postprocessing was done on the OGGM cluster in Bremen. Intermediate or preliminary data / test figures or raw data from the individual groups are only available at the OGGM cluster, and not available in the GitHUB reposity or the Zenodo data repository. These additional files are mostly in [https://cluster.klima.uni-bremen.de/~lschuster/GlacierMIP3/](https://cluster.klima.uni-bremen.de/~lschuster/GlacierMIP3/) or available by changing respectively the url path as given by the notebooks. In case of questions, please ask [Lilian Schuster](mailto:lilian.schuster@uibk.ac.at).  
+The pre- and postprocessing was done on the OGGM cluster in Bremen. Intermediate or preliminary data / test figures or raw data from the individual groups are only available at the OGGM cluster, and not available in the GitHUB repository or the Zenodo data repository. These additional files are mostly in [https://cluster.klima.uni-bremen.de/~lschuster/GlacierMIP3/](https://cluster.klima.uni-bremen.de/~lschuster/GlacierMIP3/) or available by changing respectively the url path as given by the notebooks. In case of questions, please ask [Lilian Schuster](mailto:lilian.schuster@uibk.ac.at).  
 

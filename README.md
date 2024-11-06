@@ -10,7 +10,7 @@ All instructions of how to perform the experiments can be found in the [GlacierM
 [github issues](https://github.com/GlacierMIP/GlacierMIP3/issues).
 
 This community estimate manuscript resulted out of GlacierMIP3:
-> Zekollari*, H., Schuster*, L., Maussion, F., Hock, R., Marzeion, B., and the GlacierMIP3 consortium ...TODO-add all names (submitted). Current climate policies will affect multi-century global glacier change. (link to preprint will be added once available), 2024.
+> Zekollari*, H., Schuster*, L., Maussion, F., Hock, R., Marzeion, B., Rounce, D. R., Compagno, L., Fujita, K., Huss, M., James, M., Kraaijenbrink, P. D. A., Lipscomb, W. H., Minallah, S., Oberrauch, M., Van Tricht, L., Champollion, N., Edwards, T., Farinotti, D., Immerzeel, W., Leguy, G., Sakai, A. (submitted). Glacier preservation doubled by limiting warming to 1.5°C (link to preprint will be added once available), 2024.
 *These authors contributed equally
 
 Code for the community estimate paper above is in the following folders with these respective READMEs:
@@ -19,10 +19,10 @@ Code for the community estimate paper above is in the following folders with the
    - The main figures are currently only available in the manuscript. However, figure variants (figure simplifications of the Fig. 3 worldmap that are useful for presentations and outreach) and variants of Supplementary Fig. 5 are included in this [folder](A_community_estimate_paper_analysis/figures/supplements/only_github_supplements).
 
 
-The regional GlacierMIP3 glacier projections for the different glacier models and experiments are available and documented via [LINK will be added soon](LINK-ZENODO). In addition, postprocessed data for the community estimate manuscript are included there. The data documentation is also available in [README_data.md](README_data.md).
+The regional GlacierMIP3 glacier projections for the different glacier models and experiments are available and documented via the [Zenodo dataset (Schuster, Zekollari et al., 2024)](https://doi.org/10.5281/zenodo.14045269). In addition, postprocessed data for the community estimate manuscript are included there. The data documentation is also available in [README_data.md](README_data.md).
 
 
-When using this dataset, please cite both the Zenodo dataset and the submitted study above. Note that we are working currently on another study to analyse more the glacier model differences. 
+When using this dataset, please cite both the [Zenodo dataset](https://doi.org/10.5281/zenodo.14045269) and the submitted study above. Note that we are working currently on potentially another study to analyse more the glacier model differences. 
 
 
 For data and technical questions contact:

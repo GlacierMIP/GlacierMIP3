@@ -3,12 +3,12 @@ Most recent postprocessing date: `DATE = "Feb12_2024"`
 
 Pre and postprocessing is described in [README_0_pre_post_processing](README_0_pre_post_processing).
 
-Note that you need the package versions as in mamba_packages_oggm_gmip3_sept20_2024.yml. Or you have to manually install pandas v2.1.3, xarray v2023.11.0, numpy v1.24.4. For some postprocessing, you also need to install oggm oggm (e.g. v1.6.2) /progressbar2. That means you could do the following steps:
+Note that you need the package versions as in mamba_packages_oggm_gmip3_sept20_2024.yml. Or you have to manually install pandas v2.1.3, xarray v2023.11.0, numpy v1.24.4. For some postprocessing, you also need to install oggm (e.g. v1.6.2) and progressbar2. That means you could do the following steps:
 > mamba create --name <gmip3_env> --file <mamba_packages_oggm_gmip3_sept20_2024.yml> 
 > mamba activate gmip3_env
 > pip install --user --no-deps oggm progressbar2
   
-To run the code, you need to download the GlacierMIP3 data from Zenodo. For some notebooks, you need additional data, which you can download from the OGGM cluster's GlacierMIP3 folder (https://cluster.klima.uni-bremen.de/~lschuster/GlacierMIP3/) by going to the respective path. In case of questions, please ask [Lilian Schuster](mailto:lilian.schuster@uibk.ac.at).
+To run the code, you need to download the [GlacierMIP3 data from Zenodo](https://doi.org/10.5281/zenodo.14045269). For some notebooks, you need additional data, which you can download from the OGGM cluster's GlacierMIP3 folder (https://cluster.klima.uni-bremen.de/~lschuster/GlacierMIP3/) by going to the respective path. In case of questions, please ask [Lilian Schuster](mailto:lilian.schuster@uibk.ac.at).
 
 ### 1: Visualise the 80 steady-state constant climate experiments
 `1_gmt_climate_scenarios_figure.ipynb`
