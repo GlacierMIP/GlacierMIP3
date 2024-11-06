@@ -1,4 +1,4 @@
-# README for the Glacier Model Intercomparison Project 3 Data Publication
+# README for "Data from Glacier Model Intercomparison Project Phase 3 (GlacierMIP3)" [doi: 10.5281/zenodo.14045269](https://doi.org/10.5281/zenodo.14045269)
 
 This document provides data documentation for the Glacier Model Intercomparison Project 3 (GlacierMIP3), which focused on global glacier mass change equilibration experiments.
 
@@ -13,21 +13,23 @@ For detailed information about the GlacierMIP3 experimental design, please refer
 
 The dataset includes the regional per-glacier-model simulations as submitted by the modeling groups, encapsulated in the main file `GMIP3_reg_glacier_model_data/glacierMIP3_Feb12_2024_models_all_rgi_regions_sum.nc`. Additionally, it features post-processed and aggregated data derived from GlacierMIP3, or in combination with other studies, which is used for the analyses and visualisations presented in the manuscript.
 
-> Zekollari*, H., Schuster*, L., Maussion, F., Hock, R., Marzeion, B., and the GlacierMIP3 consortium ...TODO-add all names (submitted). Current climate policies will affect multi-century global glacier change. (link to preprint will be added once available), 2024.
+> Zekollari*, H., Schuster*, L., Maussion, F., Hock, R., Marzeion, B., Rounce, D. R., Compagno, L., Fujita, K., Huss, M., James, M., Kraaijenbrink, P. D. A., Lipscomb, W. H., Minallah, S., Oberrauch, M., Van Tricht, L., Champollion, N., Edwards, T., Farinotti, D., Immerzeel, W., Leguy, G., Sakai, A. (submitted). Glacier preservation doubled by limiting warming to 1.5°C (link to preprint will be added once available), 2024.
 *These authors contributed equally
 
-When using this dataset, please cite both the Zenodo dataset and the submitted study above. Note that we are working currently on another study to analyse more the glacier model differences. 
+When using this dataset, please cite both the Zenodo dataset ([doi: 10.5281/zenodo.14045269](https://doi.org/10.5281/zenodo.14045269)) and the submitted study above. Note that we are working currently on a potential other study to analyse more the glacier model differences. 
 
-To assist potential data users, we have included a jupyter notebook (`gmip3_data_example_use_cases.ipynb`) that guides you through some simple use cases. We may adapt the data structure and improve the documentation during the review phase. If you have any questions or suggestions, please [contact us](mailto:lilian.schuster@uibk.ac.at,harry.zekollari@vub.be).
+To assist potential data users, we have included a jupyter notebook (`gmip3_data_example_use_cases.ipynb`) that guides you through some simple use cases. This notebook can be run directly when clicking on [this link](https://drive.google.com/file/d/1xbhXZwT3sQydAGi8rSjEXRKdKhFosW6d/view?usp=sharing). Please note that you will need to log in to your Google account and, if you haven't already, install Google Colaboratory. The data will then be automatically downloaded to your account.
+
+We may adapt the data structure and improve the documentation during the review phase. If you have any questions or suggestions, please [contact us](mailto:lilian.schuster@uibk.ac.at,harry.zekollari@vub.be).
 
 
-Please note that the data described is only available through the published Zenodo dataset (link will be added). The code used to generate this data and to conduct the analyses for the manuscript mentioned above is available at [https://github.com/GlacierMIP/GlacierMIP3](https://github.com/GlacierMIP/GlacierMIP3). We have retained this README_data also in the GitHub repository for reference. 
+Please note that the data described is only available through the published [Zenodo dataset](https://doi.org/10.5281/zenodo.14045269). The code used to generate this data and to conduct the analyses for the manuscript mentioned above is available at [https://github.com/GlacierMIP/GlacierMIP3](https://github.com/GlacierMIP/GlacierMIP3). We have retained this README_data also in the GitHub repository for reference. 
 
 Below you will find the documentation for the different individual datasets.
 
 
 ## GMIP3_reg_glacier_model_data/
-Here the regionally aggregated glacier model projections (volume and area) are given in different postprocessing steps. 
+Here the regionally aggregated glacier model projections (volume and area) are given in different postprocessing steps (explained in Methods and Supplementary Data Table 2 of Zekollari, Schuster et al., submitted). 
 
 All files within the `GMIP3_reg_glacier_model_data` folder are netCDF files with data for volume in m³ (`volume_m3`) and area in m² (`area_m2`) which have the following dimensions:
 
@@ -41,12 +43,14 @@ All files within the `GMIP3_reg_glacier_model_data` folder are netCDF files with
 
 **The following different regional glacier model projections are available (ordered from the least to the most postprocessed):**
 `GMIP3_reg_glacier_model_data/glacierMIP3_Feb12_2024_models_all_rgi_regions_sum.nc`
-- unprocessed dataset with the "raw" regional files as submitted by the glacier model groups. Not used directly in any of the analysis, but of most interest for model comparison analyses
+- unprocessed dataset with the "raw" regional files as submitted by the glacier model groups. Not used directly in any of the community estimate manuscript analysis, but of most interest for model comparison analyses
+- Important additional information for OGGM: Glaciers that could not be simulated ("failing glaciers" mainly because running out of the domain) were replaced by mean estimates (volume/area) from glaciers with a similar area ("filling approach"). However, as a filling but no direct upscaling was applied, regional initial volumes might slightly differ to the regional volume estimates of Farinotti et al. 2019. Substantial differences are only for climate scenarios near to pre-industrial levels in specific regions (Iceland (RGI06), and partially Alaska (RGI01) and New Zealand (RGI18)). 
+- Important additional information for PyGEM-OGGM_v13: Inversion performed for every climate dataset, so initial volume may vary by simulation for the same glacier and thus varies also within one RGI region. 
 - > in the first manuscript, this file was only used to create the next dataset.
 
 `GMIP3_reg_glacier_model_data/glacierMIP3_Feb12_2024_models_all_rgi_regions_sum_scaled.nc`
-- same as previous file but each climate scenario and model time series (experiment) but the volume is scaled to perfectly match the Farinotti et al. (2019) multi-model ice thickness estimate at the beginning and the area is scaled to match the RGI6 area (in many cases this is already true, except for some very cold experiments, where glaciers may fail for some regions)
-- > only used to estimate the amount of years until steady state is reached (in `A_community_estimate_paper_analysis/2b_find_equilibrium_steady_state_yr.ipynb` for Supplementary Fig. S8)
+- same as previous file but volume scaled to match regional Farinotti et al. (2019) multi-model glacier volume estimate at the beginning, area scaled to match the RGI6.0 area at the beginning. Scaling done for each climate scenario and model time series (experiment) individually. For most experiments, scaling was not necessary as models aimed to match regional volume/area, and upscaled already internally
+- > only used to estimate the amount of years until steady state is reached (in `A_community_estimate_paper_analysis/2b_find_equilibrium_steady_state_yr.ipynb` for Supplementary Fig. S8) and used to create next dataset
 
 `GMIP3_reg_glacier_model_data/glacierMIP3_Feb12_2024_models_all_rgi_regions_sum_scaled_extended_repeat_last_101yrs.nc`
 - same as previous file but where necessary, the experiments are extended from the year 2000 to the year 5000
@@ -54,13 +58,14 @@ All files within the `GMIP3_reg_glacier_model_data` folder are netCDF files with
        
 `GMIP3_reg_glacier_model_data/all_shifted_glacierMIP3_Feb12_2024_models_all_rgi_regions_sum_scaled_extended_repeat_last_101yrs_via_5yravg.nc`
 - same as previous file but the timeseries were shifted so that the initial state of the new timeseries match better the glacier mass estimate of the year 2020  
-- dimension changed to  (from -50 to 5000)
 - `area_m2` removed here, as not analysed in the first GlacierMIP3 study
+- additional coordinate:
+  - `year_after_2020`  : new coordinate which describes now the "year" after having reached the 2020 state - unit: year
 - here `simulation_year` is the initial simulation year as given by the unshifted version (and dimension changed to `year_after_2020`, see below)
 - additional variables:
-   - `year_after_2020`  : new dimension which describes now the "year" after having reached the 2020 state - unit: year
-   - `volume_rel_2020_%` : scaled and then shifted glacier volume/mass relative to 2020 - unit: %
+   - `volume_rel_2020_%` : scaled, extended and then shifted glacier volume/mass relative to 2020 - unit: %
    - `yrs_w_most_similar_state_to_2020`: year with a glacier volume/mass similar to the estimated state in 2020 - unit: year
+   - `temp_ch_ipcc`: Global warming above pre-industrial (1850-1900) for that experiment, using the IPCC AR6 definition (i.e. assume +0.69°C between 1850 and 1986-2005 - unit: °C
 - > used for the LOWESS fits later, but also to estimate the response timescales, and also directly for e.g. Fig. 1,2; Supplementary Fig. S5, S7
 
 
@@ -75,7 +80,7 @@ Warming above pre-industrial for the different experiments (either on a global m
 | `region`                                  | Aggregated region over which the warming was estimated. Global mean average (`global`),                |
 |                                           | global glacier-area weighted mean (`global_glacier`), regional glacier-area weighted mean (e.g. `RGI11_glacier`)  |
 |                                           | `temp_ch_ipcc_ar6_isimip3b` does not have this column as all entries are `global`                     |
-| `temp_ch_ipcc`                           | Warming above pre-industrial (1850-1900) using the IPCC AR6 definition (i.e. assume +0.69°C between 1850 and 1986-2005 - unit: °C                                                                    |
+| `temp_ch_ipcc`                           | Global warming above pre-industrial (1850-1900) using the IPCC AR6 definition (i.e. assume +0.69°C between 1850 and 1986-2005 - unit: °C                                                                    |
 
 **The following different csv files are available:** 
 `climate_input_data/temp_ch_ipcc_ar6_isimip3b.csv`: only the global mean average warming
