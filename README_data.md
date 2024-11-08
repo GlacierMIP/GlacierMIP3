@@ -45,7 +45,7 @@ All files within the `GMIP3_reg_glacier_model_data` folder are netCDF files with
 `GMIP3_reg_glacier_model_data/glacierMIP3_Feb12_2024_models_all_rgi_regions_sum.nc`
 - unprocessed dataset with the "raw" regional files submitted by the glacier model groups. Not used directly in any of the community estimate manuscript analyses, but of most interest for model comparison analyses
 - Important additional information for OGGM: Glaciers that could not be simulated ("failing glaciers" mainly because running out of the domain) were replaced by mean estimates (volume/area) from glaciers with a similar area ("filling approach"). However, as a filling but no direct upscaling was applied, regional initial volumes might slightly differ from the regional volume estimates of Farinotti et al. 2019. Substantial differences are only for climate scenarios near preindustrial temperatures in specific regions (Iceland (RGI06), and partially Alaska (RGI01) and New Zealand (RGI18)). 
-- Important additional information for PyGEM-OGGM_v13: Inversion performed for every climate dataset, so initial volume may vary by simulation for the same glacier and thus also varies within one RGI region. 
+- Important additional information for PyGEM-OGGM_v13: Failing glaciers were filled by scaling their initial volume or area by the normalized regional mean values of all successful glaciers. Inversion performed for every climate dataset, so initial volume may vary by simulation for the same glacier and thus also varies within one RGI region. 
 - > in the first manuscript, this file was only used to create the next dataset.
 
 `GMIP3_reg_glacier_model_data/glacierMIP3_Feb12_2024_models_all_rgi_regions_sum_scaled.nc`
