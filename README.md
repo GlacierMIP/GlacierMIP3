@@ -1,6 +1,6 @@
 # GlacierMIP3
 
-[GlacierMIP](https://www.climate-cryosphere.org/mips/glaciermip/about-glaciermip) is a framework for a coordinated intercomparison of global-scale glacier mass change models to foster model improvements and reduce uncertainties in global glacier projections. It is running as a 'Targeted Activity' under the auspices of the Climate and Cryosphere Project [CliC](https://www.climate-cryosphere.org/), a core project of the World Climate Research Programme (WCRP).
+[GlacierMIP](https://climate-cryosphere.org/glaciermip/) is a framework for a coordinated intercomparison of global-scale glacier mass change models to foster model improvements and reduce uncertainties in global glacier projections. It is running as a 'Targeted Activity' under the auspices of the Climate and Cryosphere Project [CliC](https://www.climate-cryosphere.org/), a core project of the World Climate Research Programme (WCRP).
 
 GlacierMIP3 and its experimental design and protocol were developed in 2020/2021 by Harry Zekollari (chair), Fabien Maussion, Lilian Schuster, Regine Hock and Ben Marzeion. 
 
@@ -19,10 +19,10 @@ Code for the community estimate paper above is in the following folders with the
    - The main figures are currently only available in the manuscript. However, figure variants (figure simplifications of the Fig. 3 worldmap that are useful for presentations and outreach) and variants of Supplementary Fig. 5 are included in this [folder](A_community_estimate_paper_analysis/figures/supplements/only_github_supplements).
 
 
-The regional GlacierMIP3 glacier projections for the different glacier models and experiments are available and documented via the [Zenodo dataset (Schuster, Zekollari et al., 2024)](https://doi.org/10.5281/zenodo.14045269). In addition, postprocessed data for the community estimate manuscript are included there. The data documentation is also available in [README_data.md](README_data.md).
+The regional GlacierMIP3 glacier projections for the different glacier models and experiments are available and documented via the [Zenodo dataset (Schuster, Zekollari et al., 2024)](https://doi.org/10.5281/zenodo.14045268). In addition, postprocessed data for the community estimate manuscript are included there. The data documentation is also available in [README_data.md](README_data.md).
 
 
-When using this dataset, please cite both the [Zenodo dataset](https://doi.org/10.5281/zenodo.14045269) and the submitted study above. Note that we are working currently on potentially another study to analyse more the glacier model differences. 
+When using this dataset, please cite both the [Zenodo dataset](https://doi.org/10.5281/zenodo.14045268) and the submitted study above. Note that we are working currently on potentially another study to analyse more the glacier model differences. 
 
 
 For data and technical questions contact:

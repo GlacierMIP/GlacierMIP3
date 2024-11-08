@@ -1,35 +1,35 @@
-# README for "Data from Glacier Model Intercomparison Project Phase 3 (GlacierMIP3)" [doi: 10.5281/zenodo.14045269](https://doi.org/10.5281/zenodo.14045269)
+# README for "Data from Glacier Model Intercomparison Project Phase 3 (GlacierMIP3)" [doi: 10.5281/zenodo.14045268](https://doi.org/10.5281/zenodo.14045268)
 
-This document provides data documentation for the Glacier Model Intercomparison Project 3 (GlacierMIP3), which focused on global glacier mass change equilibration experiments.
+This document provides data documentation for the Glacier Model Intercomparison Project 3 (GlacierMIP3), which focuses on global glacier mass change equilibration experiments.
 
-[GlacierMIP](https://www.climate-cryosphere.org/mips/glaciermip/about-glaciermip) is a framework for a coordinated intercomparison of global-scale glacier mass change models to foster model improvements and reduce uncertainties in global glacier projections. It is running as a 'Targeted Activity' under the auspices of the Climate and Cryosphere Project [CliC](https://www.climate-cryosphere.org/), a core project of the World Climate Research Programme (WCRP).
+[GlacierMIP](https://climate-cryosphere.org/glaciermip/) is a framework for a coordinated intercomparison of global-scale glacier mass change models to foster model improvements and reduce uncertainties in global glacier projections. It is running as a 'Targeted Activity' under the auspices of the Climate and Cryosphere Project [CliC](https://www.climate-cryosphere.org/), a core project of the World Climate Research Programme (WCRP).
 
 For detailed information about the GlacierMIP3 experimental design, please refer to the GlacierMIP3 protocol.
 
 ---
-**If you just want to extract the data of supplementary table 1 or 3, you can directly use the corresponding csv files (`table_S1a.csv`, `table_S1b.csv`, `table_S3.csv`).**  
+**If you are only interested in the data from Supplementary Table 1 or 3, you can directly go to the corresponding CSV files (`table_S1a.csv`, `table_S1b.csv`, `table_S3.csv`).**  
 
 ---
 
-The dataset includes the regional per-glacier-model simulations as submitted by the modeling groups, encapsulated in the main file `GMIP3_reg_glacier_model_data/glacierMIP3_Feb12_2024_models_all_rgi_regions_sum.nc`. Additionally, it features post-processed and aggregated data derived from GlacierMIP3, or in combination with other studies, which is used for the analyses and visualisations presented in the manuscript.
+The dataset includes the regional glacier volume and area projections as submitted by the glacier modelling groups, encapsulated in the main file `GMIP3_reg_glacier_model_data/glacierMIP3_Feb12_2024_models_all_rgi_regions_sum.nc`. Additionally, it features post-processed and aggregated data derived from GlacierMIP3, or in combination with other studies, which is used for the analyses and visualisations presented in the manuscript.
 
 > Zekollari*, H., Schuster*, L., Maussion, F., Hock, R., Marzeion, B., Rounce, D. R., Compagno, L., Fujita, K., Huss, M., James, M., Kraaijenbrink, P. D. A., Lipscomb, W. H., Minallah, S., Oberrauch, M., Van Tricht, L., Champollion, N., Edwards, T., Farinotti, D., Immerzeel, W., Leguy, G., Sakai, A. (submitted). Glacier preservation doubled by limiting warming to 1.5°C (link to preprint will be added once available), 2024.
 *These authors contributed equally
 
-When using this dataset, please cite both the Zenodo dataset ([doi: 10.5281/zenodo.14045269](https://doi.org/10.5281/zenodo.14045269)) and the submitted study above. Note that we are working currently on a potential other study to analyse more the glacier model differences. 
+When using this dataset, please cite both the Zenodo dataset ([doi: 10.5281/zenodo.14045268](https://doi.org/10.5281/zenodo.14045268)) and the submitted study above. Note that we are currently working on another potential study to analyse the glacier model differences more thoroughly. 
 
-To assist potential data users, we have included a jupyter notebook (`gmip3_data_example_use_cases.ipynb`) that guides you through some simple use cases. This notebook can be run directly when clicking on [this link](https://drive.google.com/file/d/1xbhXZwT3sQydAGi8rSjEXRKdKhFosW6d/view?usp=sharing). Please note that you will need to log in to your Google account and, if you haven't already, install Google Colaboratory. The data will then be automatically downloaded to your account.
+To assist potential data users, we have included a jupyter notebook (`gmip3_data_example_use_cases.ipynb`) that guides you through some simple use cases. This notebook can be directly run when clicking on [this link](https://drive.google.com/file/d/1xbhXZwT3sQydAGi8rSjEXRKdKhFosW6d/view?usp=sharing). Please note that you will need to log in to your Google account and, if you haven't already done so, install Google Colaboratory. The data will then be automatically downloaded to your account.
 
 We may adapt the data structure and improve the documentation during the review phase. If you have any questions or suggestions, please [contact us](mailto:lilian.schuster@uibk.ac.at,harry.zekollari@vub.be).
 
 
-Please note that the data described is only available through the published [Zenodo dataset](https://doi.org/10.5281/zenodo.14045269). The code used to generate this data and to conduct the analyses for the manuscript mentioned above is available at [https://github.com/GlacierMIP/GlacierMIP3](https://github.com/GlacierMIP/GlacierMIP3). We have retained this README_data also in the GitHub repository for reference. 
+Please note that the data described is only available through the published [Zenodo dataset](https://doi.org/10.5281/zenodo.14045268). The code used to generate the postprocessed data and to conduct the analyses for the manuscript mentioned above is available at [https://github.com/GlacierMIP/GlacierMIP3](https://github.com/GlacierMIP/GlacierMIP3). We have also retained this README_data in the GitHub repository for reference. 
 
-Below you will find the documentation for the different individual datasets.
+Below, you will find the documentation for the different individual datasets.
 
 
 ## GMIP3_reg_glacier_model_data/
-Here the regionally aggregated glacier model projections (volume and area) are given in different postprocessing steps (explained in Methods and Supplementary Data Table 2 of Zekollari, Schuster et al., submitted). 
+Here, the regionally aggregated glacier model projections (volume and area) are given in different postprocessing steps (explained in Methods and Supplementary Data Table 2 of Zekollari, Schuster et al., submitted). 
 
 All files within the `GMIP3_reg_glacier_model_data` folder are netCDF files with data for volume in m³ (`volume_m3`) and area in m² (`area_m2`) which have the following dimensions:
 
@@ -43,27 +43,27 @@ All files within the `GMIP3_reg_glacier_model_data` folder are netCDF files with
 
 **The following different regional glacier model projections are available (ordered from the least to the most postprocessed):**
 `GMIP3_reg_glacier_model_data/glacierMIP3_Feb12_2024_models_all_rgi_regions_sum.nc`
-- unprocessed dataset with the "raw" regional files as submitted by the glacier model groups. Not used directly in any of the community estimate manuscript analysis, but of most interest for model comparison analyses
-- Important additional information for OGGM: Glaciers that could not be simulated ("failing glaciers" mainly because running out of the domain) were replaced by mean estimates (volume/area) from glaciers with a similar area ("filling approach"). However, as a filling but no direct upscaling was applied, regional initial volumes might slightly differ to the regional volume estimates of Farinotti et al. 2019. Substantial differences are only for climate scenarios near to pre-industrial levels in specific regions (Iceland (RGI06), and partially Alaska (RGI01) and New Zealand (RGI18)). 
-- Important additional information for PyGEM-OGGM_v13: Inversion performed for every climate dataset, so initial volume may vary by simulation for the same glacier and thus varies also within one RGI region. 
+- unprocessed dataset with the "raw" regional files submitted by the glacier model groups. Not used directly in any of the community estimate manuscript analyses, but of most interest for model comparison analyses
+- Important additional information for OGGM: Glaciers that could not be simulated ("failing glaciers" mainly because running out of the domain) were replaced by mean estimates (volume/area) from glaciers with a similar area ("filling approach"). However, as a filling but no direct upscaling was applied, regional initial volumes might slightly differ from the regional volume estimates of Farinotti et al. 2019. Substantial differences are only for climate scenarios near preindustrial temperatures in specific regions (Iceland (RGI06), and partially Alaska (RGI01) and New Zealand (RGI18)). 
+- Important additional information for PyGEM-OGGM_v13: Inversion performed for every climate dataset, so initial volume may vary by simulation for the same glacier and thus also varies within one RGI region. 
 - > in the first manuscript, this file was only used to create the next dataset.
 
 `GMIP3_reg_glacier_model_data/glacierMIP3_Feb12_2024_models_all_rgi_regions_sum_scaled.nc`
-- same as previous file but volume scaled to match regional Farinotti et al. (2019) multi-model glacier volume estimate at the beginning, area scaled to match the RGI6.0 area at the beginning. Scaling done for each climate scenario and model time series (experiment) individually. For most experiments, scaling was not necessary as models aimed to match regional volume/area, and upscaled already internally
-- > only used to estimate the amount of years until steady state is reached (in `A_community_estimate_paper_analysis/2b_find_equilibrium_steady_state_yr.ipynb` for Supplementary Fig. S8) and used to create next dataset
+- same as the previous file but volume scaled to match regional Farinotti et al. (2019) multi-model glacier volume estimate at the beginning, area scaled to match the RGI6.0 area at the beginning. Scaling is done individually for each climate scenario and model time series (experiment). For most experiments, scaling was not necessary as models aimed to match regional volume/area and upscaled already internally
+- > only used to estimate the number of years until steady state is reached (in `A_community_estimate_paper_analysis/2b_find_equilibrium_steady_state_yr.ipynb` for Supplementary Fig. S8) and used to create the next dataset
 
 `GMIP3_reg_glacier_model_data/glacierMIP3_Feb12_2024_models_all_rgi_regions_sum_scaled_extended_repeat_last_101yrs.nc`
-- same as previous file but where necessary, the experiments are extended from the year 2000 to the year 5000
-- > used in some notebooks for the steady-state estimates (note that the steady-state estimates are the same as in the below shifted dataset)
+- same as the previous file but where necessary, the experiments are extended from the year 2000 to the year 5000
+- > used in some notebooks for the steady-state estimates (note that the steady-state estimates are the same as in the below-shifted dataset)
        
 `GMIP3_reg_glacier_model_data/all_shifted_glacierMIP3_Feb12_2024_models_all_rgi_regions_sum_scaled_extended_repeat_last_101yrs_via_5yravg.nc`
-- same as previous file but the timeseries were shifted so that the initial state of the new timeseries match better the glacier mass estimate of the year 2020  
+- same as the previous file, but the timeseries were shifted so that the initial state of the new timeseries match better the glacier mass estimate of the year 2020  
 - `area_m2` removed here, as not analysed in the first GlacierMIP3 study
 - additional coordinate:
-  - `year_after_2020`  : new coordinate which describes now the "year" after having reached the 2020 state - unit: year
+  - `year_after_2020`: new coordinate which describes the "simulation year" from the 2020 state onwards - unit: year
 - here `simulation_year` is the initial simulation year as given by the unshifted version (and dimension changed to `year_after_2020`, see below)
 - additional variables:
-   - `volume_rel_2020_%` : scaled, extended and then shifted glacier volume/mass relative to 2020 - unit: %
+   - `volume_rel_2020_%`: scaled, extended and then shifted glacier volume/mass relative to 2020 - unit: %
    - `yrs_w_most_similar_state_to_2020`: year with a glacier volume/mass similar to the estimated state in 2020 - unit: year
    - `temp_ch_ipcc`: Global warming above pre-industrial (1850-1900) for that experiment, using the IPCC AR6 definition (i.e. assume +0.69°C between 1850 and 1986-2005 - unit: °C
 - > used for the LOWESS fits later, but also to estimate the response timescales, and also directly for e.g. Fig. 1,2; Supplementary Fig. S5, S7
@@ -82,18 +82,17 @@ Warming above pre-industrial for the different experiments (either on a global m
 |                                           | `temp_ch_ipcc_ar6_isimip3b` does not have this column as all entries are `global`                     |
 | `temp_ch_ipcc`                           | Global warming above pre-industrial (1850-1900) using the IPCC AR6 definition (i.e. assume +0.69°C between 1850 and 1986-2005 - unit: °C                                                                    |
 
-**The following different csv files are available:** 
+**The following different CSV files are available:** 
 `climate_input_data/temp_ch_ipcc_ar6_isimip3b.csv`: only the global mean average warming
 - > used in most figures and analysis
 
 `climate_input_data/temp_ch_ipcc_ar6_isimip3b_glacier_regionally.csv`: all regions
-- Attention: here we assume regionally equally +0.69°C of warming between 1850 and 1986 to 2005. For the warming ratio computation that is shown in e.g. Fig. 2 or Fig. 4, we substract the 0.69°C again to instead just show the regional warming ratio to the actual regional 1986 to 2005 estimates. 
+- Attention: Here we assume regionally equally +0.69°C of warming between 1850 and 1986 to 2005. For the warming ratio computation, shown in e.g. Fig. 2 or Fig. 4, we subtract the 0.69°C again to instead just show the regional warming ratio to the actual regional 1986 to 2005 estimates. 
 - > used e.g. for Supplementary Fig. 1, Fig. 2, 
 
 
 ## LOWESS fits
-The different relative glacier mass changes were LOWESS fitted with respective temperature changes of the 80 climate scenarios. The LOWESS fit results, 
-here given in steps of 0.05°C, are given in the `lowess_fit_rel_2020*.csv` files for different variants
+The relative glacier mass changes were LOWESS fitted with the respective temperature changes of the 80 climate scenarios. The LOWESS fit results, here given in steps of 0.05°C, are given in the `lowess_fit_rel_2020*.csv` files for different variants.
 
 All `lowess_fit_rel_2020*.csv` files have the following columns:
 
@@ -103,10 +102,10 @@ All `lowess_fit_rel_2020*.csv` files have the following columns:
 | `0.5`, `0.17`, `0.83` (and others) | Quantiles of fitted remaining glacier mass in % relative to 2020 (21- or 101-year rolling average) for the respective region and warming level.                                                  |
 | `region`         | The 19 RGI6 regions ('01' to '19') or all regions together ('All'), which corresponds to the global estimates.                                                                                     |
 | `year`           | 100, 500, or 5000 - Year of analysis.                                                                                                                                                             |
-| `frac`           | Chosen frac parameter (hyperparameter of how much data points are applied for the local regression, see MOEPY package documentation).                                                                 |
+| `frac`           | Chosen frac parameter (hyperparameter of how many data points are applied for the local regression, see [MOEPY package documentation](https://ayrtonb.github.io/Merit-Order-Effect/)).                                                                 |
 |                  | Note: frac is only valid for the median values in case of `region=='All'`.                                                                                                                    |
-| `it`             | Number of iterations for the lowess fit (see MOEPY package).                                                                                                                                     |
-| `N`              | Repetitions (see MOEPY package).                                                                                                                                                             |
+| `it`             | Number of iterations for the lowess fit (see [MOEPY package](https://ayrtonb.github.io/Merit-Order-Effect/)).                                                                                                                                     |
+| `N`              | Repetitions (see [MOEPY package](https://ayrtonb.github.io/Merit-Order-Effect/)).                                                                                                                                                             |
 
 
 **The following different LOWESS fitted data files are available:** 
@@ -116,7 +115,7 @@ All `lowess_fit_rel_2020*.csv` files have the following columns:
 - > used for Fig. 1-4, Extended Data Fig. 1-XX, Extended Table 1, and several supplementary figures XX
 
 `lowess_fit_rel_2020_21yr_avg_after{YEAR}yr_Feb12_2024.csv` with YEAR=100 or YEAR=500
-- similar to `lowess_fit_rel_2020_101yr_avg_steady_state_Feb12_2024.csv`, but for the estimates after 100 or 500 simulation years. Here the quantiles were LOWESS-fitted with 21-year centered rolling average glacier mass estimates
+- similar to `lowess_fit_rel_2020_101yr_avg_steady_state_Feb12_2024.csv`, but for the estimates after 100 or 500 simulation years. Quantiles were LOWESS-fitted with 21-year centered rolling average glacier mass estimates
 - year is here 100 or 500
 - > used for Fig. 3, Supplementary Fig. S3
 
@@ -131,13 +130,13 @@ All `lowess_fit_rel_2020*.csv` files have the following columns:
 
 `lowess_fit_rel_2020_101yr_avg_steady_state_Feb12_2024_per_glac_model.csv`
 - similar to `lowess_fit_rel_2020_101yr_avg_steady_state_Feb12_2024.csv`, but doing a LOWESS fit for every glacier model individually.
-- note that the fit performs not  well for some glacier models below 1.5°C, and should thus not be used in that range. However, to just estimate the spread in the committed ice loss sensitivity between 1.5 and 3.0°C, it is ok
-- > used to estimate the spread/uncertainties in the committed ice loss sensitivity (e.g. shown in Extended Data Table 1, Supplementary Fig. S2)
+- Note that the fit does not perform well for some glacier models below 1.5°C, and should thus not be used in that range. 
+- > used to estimate the spread/uncertainties in the committed ice loss sensitivity (only in range 1.5 to 3.0°C, e.g. shown in Extended Data Table 1, Supplementary Fig. S2)
 
 
  
 ## other files
-**response timescale dataset csv-file**: `resp_time_shifted_X%_threshold25%_for_deltaT_rgi_reg_roll_volume_21yravg.csv` with the following columns
+**response timescale dataset CSV-file**: `resp_time_shifted_for_deltaT_rgi_reg_roll_volume_21yravg.csv` with the following columns
 | Column Name                          | Description                                                                 |
 |--------------------------------------|-----------------------------------------------------------------------------|
 | `rgi_reg`                            | RGI region (e.g. 'RGI11') or global ('All')                                   |
@@ -148,11 +147,11 @@ All `lowess_fit_rel_2020*.csv` files have the following columns:
 | `resp_time_-50%`                     | Response timescale for -50% of the total changes to occur (here only if changes are losses) - unit: years |
 | `resp_time_-80%`                     | Response timescale for -80% of the total changes to occur (here only if changes are losses) - unit: years |
 | `resp_time_-90%`                     | Response timescale for -90% of the total changes to occur (here only if changes are losses) - unit: years |
-| `diff_resp_time_-50%`                | Difference of that model's response time scale to the median glacier model response time scale) - unit: years |
-| `diff_resp_time_-80%`                | Difference of that model's response time scale to the median glacier model response time scale) - unit: years |
-| `diff_resp_time_-90%`                | Difference of that model's response time scale to the median glacier model response time scale) - unit: years |
+| `diff_resp_time_-50%`                | Difference of that model's response timescale to the median glacier model response time scale) - unit: years |
+| `diff_resp_time_-80%`                | Difference of that model's response timescale to the median glacier model response time scale) - unit: years |
+| `diff_resp_time_-90%`                | Difference of that model's response timescale to the median glacier model response time scale) - unit: years |
 
-> this dataset is used e.g. for the following figures or tables: Extended Data Fig. 6, Supplementary Fig. S6
+> This dataset is used, e.g. for the following figures or tables: Extended Data Fig. 6, Supplementary Fig. S6
      
 
 
@@ -184,7 +183,7 @@ All `lowess_fit_rel_2020*.csv` files have the following columns:
 | `max_elev_area_weighted`                             | Maximum elevation (reg-aw) - unit: m                                        |
 | `min_elev_area_weighted`                             | Minimum elevation (reg-aw) - unit: m                                        |
 | `mean_area_ten_largest_glac`                         | Mean area (10 largest glaciers by area) - unit: km2                         |
-| *Observed glacier changes and states in past (data from Hugonnet et al. 2021 & Farinotti et al. 2019):* |  |
+| *Observed glacier changes and states in the past (data from Hugonnet et al. 2021 & Farinotti et al. 2019):* |  |
 | `geodetic_obs_area_weighted`                         | Observed geodetic MB (2000-2019, reg) from Hugonnet et al. (2021) - unit: m w.e. year-1 |
 | `dvoldt_m3_hugonnet`                                 | Observed ΔVolumeΔt (2000-2019, reg) from Hugonnet et al. (2021) - unit: m3 per year |
 | `20yr_regional_dvol_dt_2000_2019_vs_2000_vol_%`      | Observed ΔMassΔt (2000-2019 relative to 2000 Mass, reg) - unit: %           |
@@ -212,6 +211,6 @@ All `lowess_fit_rel_2020*.csv` files have the following columns:
 
 -------
 **Some additional notes**
-We also use for a few supplementary figures data from other studies. Sometimes we got the data via personal communication or by aggregating raw files from published datasets. These files are shortly described in `data_from_others/README_data_from_others.md`. However, they are only available via [https://cluster.klima.uni-bremen.de/~lschuster/GlacierMIP3/data/data_from_others](https://cluster.klima.uni-bremen.de/~lschuster/GlacierMIP3/data/data_from_others). 
+For a few supplementary figures, we also used data from other studies. Sometimes we got the data via personal communication or by aggregating raw files from published datasets. These files are shortly described in `data_from_others/README_data_from_others.md`. However, they are only available via [https://cluster.klima.uni-bremen.de/~lschuster/GlacierMIP3/data/data_from_others](https://cluster.klima.uni-bremen.de/~lschuster/GlacierMIP3/data/data_from_others). 
 
-The per-glacier model glacier volume and area estimates are at the moment only available for the models `PyGEM-OGGM_v13` and `OGGM_v16`. If you have interest in that data, please [contact us](mailto:lilian.schuster@uibk.ac.at,harry.zekollari@vub.be). 
+The per-glacier model glacier volume and area estimates are currecntly only available for the models `PyGEM-OGGM_v13` and `OGGM_v16`. If you have are interested in the glacier-specific files, please [contact us](mailto:lilian.schuster@uibk.ac.at,harry.zekollari@vub.be). 
