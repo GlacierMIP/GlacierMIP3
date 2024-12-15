@@ -1,4 +1,4 @@
-# Community estimate paper analysis and figure creation - Notebook overview:
+# [Community estimate paper analysis and figure creation](https://doi.org/10.31223/X51T5W) - Notebook overview:
 Most recent postprocessing date: `DATE = "Feb12_2024"`
 
 Pre and postprocessing is described in [README_0_pre_post_processing](README_0_pre_post_processing).
@@ -40,7 +40,7 @@ To run the code, you need to download the [GlacierMIP3 data from Zenodo](https:/
 `3b_create_fig4_plus_regional_correlations.ipynb`
 - creates **Figure 4, Supplementary figure XX,XX** on regional correlation coefficients and different reponse timescale definitions
 
-### 4: further aggregated figures: world map
+### 4: Further aggregated figures: world map
 `4_world_map_figure.ipynb`
 - creates **Figure 3 world map**, figure variants are in `figures/supplements/only_github_supplements/fig3_worldmap_variants`
 

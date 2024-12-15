@@ -10,7 +10,7 @@ All instructions of how to perform the experiments can be found in the [GlacierM
 [github issues](https://github.com/GlacierMIP/GlacierMIP3/issues).
 
 This community estimate manuscript resulted out of GlacierMIP3:
-> Zekollari*, H., Schuster*, L., Maussion, F., Hock, R., Marzeion, B., Rounce, D. R., Compagno, L., Fujita, K., Huss, M., James, M., Kraaijenbrink, P. D. A., Lipscomb, W. H., Minallah, S., Oberrauch, M., Van Tricht, L., Champollion, N., Edwards, T., Farinotti, D., Immerzeel, W., Leguy, G., Sakai, A. (submitted). Glacier preservation doubled by limiting warming to 1.5°C (link to preprint will be added once available), 2024.
+> Zekollari*, H., Schuster*, L., Maussion, F., Hock, R., Marzeion, B., Rounce, D. R., Compagno, L., Fujita, K., Huss, M., James, M., Kraaijenbrink, P. D. A., Lipscomb, W. H., Minallah, S., Oberrauch, M., Van Tricht, L., Champollion, N., Edwards, T., Farinotti, D., Immerzeel, W., Leguy, G., Sakai, A. (under review): Glacier preservation doubled by limiting warming to 1.5°C. Preprint available at [https://doi.org/10.31223/X51T5W](https://doi.org/10.31223/X51T5W), 2024.
 *These authors contributed equally
 
 Code for the community estimate paper above is in the following folders with these respective READMEs:
@@ -22,7 +22,7 @@ Code for the community estimate paper above is in the following folders with the
 The regional GlacierMIP3 glacier projections for the different glacier models and experiments are available and documented via the [Zenodo dataset (Schuster, Zekollari et al., 2024)](https://doi.org/10.5281/zenodo.14045268). In addition, postprocessed data for the community estimate manuscript are included there. The data documentation is also available in [README_data.md](README_data.md).
 
 
-When using this dataset, please cite both the [Zenodo dataset](https://doi.org/10.5281/zenodo.14045268) and the submitted study above. Note that we are working currently on potentially another study to analyse more the glacier model differences. 
+When using this dataset, please cite both the [Zenodo dataset](https://doi.org/10.5281/zenodo.14045268) and the [preprint](https://doi.org/10.31223/X51T5W) above. Note that we are working currently on potentially another study to analyse more the glacier model differences. 
 
 
 For data and technical questions contact:
