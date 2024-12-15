@@ -13,7 +13,7 @@ This community estimate manuscript resulted out of GlacierMIP3:
 
 > Zekollari\*, H., Schuster\*, L., Maussion, F., Hock, R., Marzeion, B., Rounce, D. R., Compagno, L., Fujita, K., Huss, M., James, M., Kraaijenbrink, P. D. A., Lipscomb, W. H., Minallah, S., Oberrauch, M., Van Tricht, L., Champollion, N., Edwards, T., Farinotti, D., Immerzeel, W., Leguy, G., Sakai, A. (under review): Glacier preservation doubled by limiting warming to 1.5°C. Preprint available at [https://doi.org/10.31223/X51T5W](https://doi.org/10.31223/X51T5W), 2024.
 >
-> \* **These authors contributed equally.**
+> \* *These authors contributed equally.*
 
 
 Code for the community estimate paper above is in the following folders with these respective READMEs:
