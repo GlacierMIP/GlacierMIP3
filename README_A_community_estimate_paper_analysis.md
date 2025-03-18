@@ -12,8 +12,7 @@ To run the code, you need to download the [GlacierMIP3 data from Zenodo](https:/
 
 ### 1: Visualise the 80 steady-state constant climate experiments
 `1_gmt_climate_scenarios_figure.ipynb`
-- creates **supplementary figure XX** that shows the climate timeseries
-  - `fig_ED_XX_climate.png`
+- creates **supplementary figure S1** that shows the climate timeseries
 - to run the code, you need additional climate data from ISIMIP3b that are available here: https://cluster.klima.uni-bremen.de/~lschuster/isimip3b/isimip3b_tasAdjust_monthly 
 
 
@@ -21,46 +20,46 @@ To run the code, you need to download the [GlacierMIP3 data from Zenodo](https:/
 
 `2a_glacier_vs_climate_change_evolution.ipynb` 
 - Shows summary glacier evolution time series and steady-state mass estimates dependent on the applied climate experiment
-- creates **Figure 1, 2 and several supplementary figures XX (variants of Fig. 2)**
-    - global plot, and for every RGI region, showing results by always using median (and quantiles) of glacier models 
-    - creates figures of global vs regional warming (for supplements)
+- creates **Figure 1, 2 and Supplementary Figures S4, S6, S13 (and other variants within only_github_supplements)**
+    - global plot, and for every RGI region, showing results by always using median (and quantiles) of glacier models
+- creates figure of global vs regional warming (Suppl. Fig. S2)
 
 `2b_find_equilibrium_steady_state_yr.ipynb`
 - Computes year where region reaches steady-state
-- creates **supplementary figure XX**
+- creates **supplementary figure S8**
 
     
 ### 3: Further analysis of steady state, time to reach 50 or 80% of the total changes, and of regional characteristics related to these regional differences
 
 `3a_response_time_analysis_with_2020_shift.ipynb`
 - Visualises example timeseries and response timescales for different glacier models and climate experiments 
-    - creates timeseries for each region/glacier model and all experiments with global warming >=1.2°C. Example time series in **supplementary figure XX**, remaining variants are in `figures/supplements/only_github_supplements/figS5_variants`
-    - creates **supplementary figure XX,XX** of "Time to reach 50%/80 % of the changes statistics" 
+    - creates timeseries for each region/glacier model and all experiments with global warming >=1.2°C. Example time series in **supplementary figure S12**, remaining variants are in `figures/supplements/only_github_supplements/figS5_variants`
+    - creates **supplementary figure S11, S15** of "Time to reach 50%/80 % of the changes statistics" 
 
 `3b_create_fig4_plus_regional_correlations.ipynb`
-- creates **Figure 4, Supplementary figure XX,XX** on regional correlation coefficients and different reponse timescale definitions
+- creates **Figure 4, Supplementary figure S3, S9** on regional correlation coefficients and different response timescale definitions
 
 ### 4: Further aggregated figures: world map
 `4_world_map_figure.ipynb`
 - creates **Figure 3 world map**, figure variants are in `figures/supplements/only_github_supplements/fig3_worldmap_variants`
 
-### 5: Discussion analysis with just supplementary/extended data figures
+### 5: Discussion analysis with just supplementary figures
 `5_comparison_to_marzeion_et_al_2018.ipynb`
-- creates **supplemenentary figure XX , formerly extended data fig. 3**
+- creates **supplemenentary figure S7**
 - comparison of the GlacierMIP3 results (relative to inventory date) to those from Marzeion et al., (2018)
 - compares also the temperature sensitivities between Marzeion et al. 2018 and GMIP3 (number possibly mentioned in main text)
 
 `5_comparison_to_zekollari_et_al_2024_rounce_et_al_2023.ipynb`
 - comparison to the 2100 projections of other studies
 - computed the glacier mass loss sensitivity to temperature changes by using the 2100 projection of rounce et al. 2023 (estimate mentioned in main manuscript)
-- creates **supplementary figure XX, formerly Extended data Fig. 4**: comparison plot of regional glacier mass loss from transient glacier projections until the year 2100 (Zekollari et al., 2024) versus the GlacierMIP3 steady state glacier mass losses
+- creates **supplementary figure S10**: comparison plot of regional glacier mass loss from transient glacier projections until the year 2100 (Zekollari et al., 2024) versus the GlacierMIP3 steady state glacier mass losses
 
 `5_conversion_to_SLR_equivalent.ipynb`
 - creates a fit of how much glacier volume below sea-level is lost vs total volume (by using OGGM data). This fit is used later in `6_csv_tables_creation.ipynb` (this needs a lot of additional raw files from OGGM simulations, and only runs on the OGGM cluster in Bremen).
-- also creates **supplementary figure XX** to show the relationship of the ratio to the total volume (and the applied fit from the OGGM data)
+- also creates **supplementary figure S14** to show the relationship of the ratio to the total volume (and the applied fit from the OGGM data)
 
 `5_suppl_per_glacier_model_fit.ipynb`
-- creates **supplementary figure XX**  with per glacier model LOWESS fits
+- creates **supplementary figure S5**  with per glacier model LOWESS fits
 - uses the per-glacier model LOWESS fit (more in `README_data.md`)
 
 `5x_RGI04_barnes_ice_cap_analysis.ipynb`
