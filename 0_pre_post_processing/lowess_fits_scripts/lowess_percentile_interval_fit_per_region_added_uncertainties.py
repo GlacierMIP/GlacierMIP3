@@ -623,16 +623,9 @@ for temp_above_0_8 in [temp_above_0_8_sel]: #,False]: True
                         _sel = df_quantiles_ll_concat.loc[df_quantiles_ll_concat.algorithm_sel=='non_negative_and_decreasing']
                         min_mad = _sel['median_absolute_deviation'].min()
                         min_rmse = _sel['rmse'].min()
-
                         max_diff_above_zero = _sel[f'min_{q}_diff_above_zero'].max()
-
-                        #sel = _sel.loc[_sel.median_absolute_deviation == min_mad]
                         sel = _sel.loc[_sel.rmse == min_rmse]
                         sel = sel.sort_values('x')
-                        #ax.plot(sel.index, sel[0.5], color='darkgreen', lw=3)
-                        #sel2 = _sel.loc[_sel[f'min_{q}_diff_above_zero'] == max_diff_above_zero]
-                        #sel2 = sel2.sort_values('x')
-                        #ax.plot(sel2.index, sel2[0.5], color='blue', lw=3)
 
                     elif len(df_quantiles_ll_concat.loc[df_quantiles_ll_concat.algorithm_sel=='only_decreasing'])>=1:
                         _sel = df_quantiles_ll_concat.loc[df_quantiles_ll_concat.algorithm_sel=='only_decreasing']

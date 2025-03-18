@@ -88,7 +88,7 @@ Warming above pre-industrial for the different experiments (either on a global m
 
 `climate_input_data/temp_ch_ipcc_ar6_isimip3b_glacier_regionally.csv`: all regions
 - Attention: Here we assume regionally equally +0.69°C of warming between 1850 and 1986 to 2005. For the warming ratio computation, shown in e.g. Fig. 2 or Fig. 4, we subtract the 0.69°C again to instead just show the regional warming ratio to the actual regional 1986 to 2005 estimates. 
-- > used e.g. for Supplementary Fig. 1, Fig. 2, 
+- > used e.g. for Supplementary Fig. S2, and to create `3_shift_summary_region_characteristics.csv`
 
 
 ## LOWESS fits
@@ -112,26 +112,27 @@ All `lowess_fit_rel_2020*.csv` files have the following columns:
 `lowess_fit_rel_2020_101yr_avg_steady_state_Feb12_2024.csv`
 - fit uses relative remaining mass at steady-state (101-year rolling average of the last simulation years, either after 5000 or 2000 years) together with global mean warming above preindustrial
 - year is here 5000 (although for some regions simulations were only done for 2000 years)
-- > used for Fig. 1-4, Extended Data Fig. 1-XX, Extended Table 1, and several supplementary figures XX
+- > used for Fig. 1-4, Supplementary Table S1, and several supplementary figures
 
 `lowess_fit_rel_2020_21yr_avg_after{YEAR}yr_Feb12_2024.csv` with YEAR=100 or YEAR=500
 - similar to `lowess_fit_rel_2020_101yr_avg_steady_state_Feb12_2024.csv`, but for the estimates after 100 or 500 simulation years. Quantiles were LOWESS-fitted with 21-year centered rolling average glacier mass estimates
 - year is here 100 or 500
-- > used for Fig. 3, Supplementary Fig. S3
+- > used for Fig. 3, Supplementary Fig. S6
 
 `lowess_fit_rel_2020_101yr_avg_steady_state_Feb12_2024_only_global_models.csv`
 - similar to `lowess_fit_rel_2020_101yr_avg_steady_state_Feb12_2024.csv`, but using for the LOWESS fit only globally available glacier models
 - year is here 5000
-> used for e.g. Supplementary Fig. S7
+> used for e.g. Supplementary Fig. S13
 
 `lowess_fit_rel_2020_101yr_avg_steady_state_Feb12_2024_rel_regional_glacier_temp_ch.csv`
 - similar to `lowess_fit_rel_2020_101yr_avg_steady_state_Feb12_2024.csv`, but using instead regional glacier-area weighted warming
-> used for e.g. Extended Data Fig. 2
+- March 2025: For the regional warming lowess fits, it does not makes sense to aggregate to global uncertainties as we have to add them up via the composites. The reason is the  different regional warming. Therefore, global uncertainties were set to "NaN" values.  
+> used for e.g. Supplementary Fig. S4
 
 `lowess_fit_rel_2020_101yr_avg_steady_state_Feb12_2024_per_glac_model.csv`
 - similar to `lowess_fit_rel_2020_101yr_avg_steady_state_Feb12_2024.csv`, but doing a LOWESS fit for every glacier model individually.
 - Note that the fit does not perform well for some glacier models below 1.5°C, and should thus not be used in that range. 
-- > used to estimate the spread/uncertainties in the committed ice loss sensitivity (only in range 1.5 to 3.0°C, e.g. shown in Extended Data Table 1, Supplementary Fig. S2)
+- > used to estimate the spread/uncertainties in the committed ice loss sensitivity (only in range 1.5 to 3.0°C, e.g. shown in Supplementary Data Table S1, Supplementary Fig. S5)
 
 
  
@@ -151,8 +152,7 @@ All `lowess_fit_rel_2020*.csv` files have the following columns:
 | `diff_resp_time_-80%`                | Difference of that model's response timescale to the median glacier model response time scale) - unit: years |
 | `diff_resp_time_-90%`                | Difference of that model's response timescale to the median glacier model response time scale) - unit: years |
 
-> This dataset is used, e.g. for the following figures or tables: Extended Data Fig. 6, Supplementary Fig. S6
-     
+> This dataset is used, e.g. for the following figures: Supplementary Fig. S11, S12, S15
 
 
 **aggregated regional characteristics summary csv-file**: `3_shift_summary_region_characteristics.csv` with the following columns
@@ -182,8 +182,7 @@ All `lowess_fit_rel_2020*.csv` files have the following columns:
 | `ice_cap_ratio_hundredlargest_glac`                  | Ratio ice caps (100 largest glaciers) - no unit                             |
 | `max_elev_area_weighted`                             | Maximum elevation (reg-aw) - unit: m                                        |
 | `min_elev_area_weighted`                             | Minimum elevation (reg-aw) - unit: m                                        |
-| `mean_area_ten_largest_glac`                         | Mean area (10 largest glaciers by area) - unit: km2                         |
-| *Observed glacier changes and states in the past (data from Hugonnet et al. 2021 & Farinotti et al. 2019):* |  |
+| *Observed glacier changes and states ein the past (data from Hugonnet et al. 2021 & Farinotti et al. 2019):* |  |
 | `geodetic_obs_area_weighted`                         | Observed geodetic MB (2000-2019, reg) from Hugonnet et al. (2021) - unit: m w.e. year-1 |
 | `dvoldt_m3_hugonnet`                                 | Observed ΔVolumeΔt (2000-2019, reg) from Hugonnet et al. (2021) - unit: m3 per year |
 | `20yr_regional_dvol_dt_2000_2019_vs_2000_vol_%`      | Observed ΔMassΔt (2000-2019 relative to 2000 Mass, reg) - unit: %           |
@@ -206,7 +205,7 @@ All `lowess_fit_rel_2020*.csv` files have the following columns:
 | `ice_loss_slope_1.5_to_3.0_per_tenth_degC_rel_2020` | Sensitivity of committed glacier mass loss (ΔTemp=1.5 to 3.0°C) - unit : % per 0.1°C  |
 
 *Abbreviations: “10/100 largest” refers to the 10/100 glaciers with the largest initial glacier mass at inventory date according to the estimate by Farinotti et al. 2021. ”reg-aw” refers to regionally glacier-area weighted, “reg” refers to regional, “avg” refers to average, “Temp” refers to temperature, “Prcp” refers to precipitation.*
-> used for Extended Data Table 1 and 3, and for Fig. 4, Extended Data Fig. 2, Supplementary Fig. 4, and many other figures
+> used for Supplementary Data Table S1 and S3, and for Fig. 4, Supplementary Fig. S3, S9, and many other figures
 
 
 -------
