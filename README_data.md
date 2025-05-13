@@ -13,7 +13,7 @@ For detailed information about the GlacierMIP3 experimental design, please refer
 
 The dataset includes the regional glacier volume and area projections as submitted by the glacier modelling groups, encapsulated in the main file `GMIP3_reg_glacier_model_data/glacierMIP3_Feb12_2024_models_all_rgi_regions_sum.nc`. Additionally, it features post-processed and aggregated data derived from GlacierMIP3, or in combination with other studies, which is used for the analyses and visualisations presented in the manuscript.
 
-> Zekollari*, H., Schuster*, L., Maussion, F., Hock, R., Marzeion, B., Rounce, D. R., Compagno, L., Fujita, K., Huss, M., James, M., Kraaijenbrink, P. D. A., Lipscomb, W. H., Minallah, S., Oberrauch, M., Van Tricht, L., Champollion, N., Edwards, T., Farinotti, D., Immerzeel, W., Leguy, G., Sakai, A. (submitted). Glacier preservation doubled by limiting warming to 1.5°C (link to preprint will be added once available), 2024.
+> Zekollari*, H., Schuster*, L., Maussion, F., Hock, R., Marzeion, B., Rounce, D. R., Compagno, L., Fujita, K., Huss, M., James, M., Kraaijenbrink, P. D. A., Lipscomb, W. H., Minallah, S., Oberrauch, M., Van Tricht, L., Champollion, N., Edwards, T., Farinotti, D., Immerzeel, W., Leguy, G., Sakai, A. (under review). Glacier preservation doubled by limiting warming to 1.5°C (https://doi.org/10.31223/X51T5W), 2024.
 *These authors contributed equally
 
 When using this dataset, please cite both the Zenodo dataset ([doi: 10.5281/zenodo.14045268](https://doi.org/10.5281/zenodo.14045268)) and the submitted study above. Note that we are currently working on another potential study to analyse the glacier model differences more thoroughly. 
@@ -156,53 +156,49 @@ All `lowess_fit_rel_2020*.csv` files have the following columns:
 
 
 **aggregated regional characteristics summary csv-file**: `3_shift_summary_region_characteristics.csv` with the following columns
-| Column Name                                          | Description                                                                 |
-|------------------------------------------------------|-----------------------------------------------------------------------------|
-| `rgi_reg`, `region`                                  | Regions e.g. ('11'), all regions together described as `All` in `rgi_reg` and as `global` in `region` |
-| *Climate Indices (data from ISIMIP3a (GSWP3-W5E5)):* |                                                                             |
-| `temp_ch_avg_2000-2019_vs_1901-1920`                | ΔTemp 2000-2019 - 1901-1920 (reg-aw) - unit: °C                             |
-| `temp_avg_2000-2019`                                 | Temp 2000-2019 (reg-aw) - unit: °C                                          |
-| `prcp_avg_2000-2019`                                 | Prcp 2000-2019 (reg-aw) - unit: kg m-2 s-1                                  |
-| `continentality_index_avg_2000-2019`                 | Continentality index 2000-2019 (temp difference between coldest/warmest     |
-|                                                      | month same year, reg-aw) - unit: °C                                        |
-| `median_reg_vs_glob_ch`                              | Ratio reg vs global ΔTemp to pre-industrial (median, reg-aw) - no unit      |
-| `median_reg_vs_glob_temp_ch_1.5_3.0`                 | Same as `median_reg_vs_glob_ch` but only with experiments between 1.5°C    |
-|                                                      | and 3.0°C - no unit                                                         |
-| `median_reg_vs_glob_ch_ref_1986-2005`                | Ratio reg vs global ΔTemp to 1986-2005 (median, reg-aw) - no unit           |
-| `median_reg_vs_glob_temp_ch_1.5_3.0_ref_1986-2005`   | Same as `median_reg_vs_glob_ch_ref_1986-2005` but only with experiments     |
-|                                                      | between 1.5°C and 3.0°C - no unit                                           |
-| `slope_fit_reg_vs_glob_ch`                           | Fitted linear fit slope regional vs global temp change (aw) - no unit       |
-| *Glacier topography (data from RGI6):*               |                                                                             |
-| `slope_weighted_area_avg`                            | Glacier surface slope (reg-aw) - unit: °                                    |
-| `lat_absolute_weighted_area_avg`                     | Latitude (absolute, reg-aw) - unit: °                                       |
-| `lat_weighted_area_avg`                              | Latitude (reg-aw) - unit: °                                                 |
-| `marine_term_ratio_hundredlargest_glac`              | Ratio marine-terminating (100 largest glaciers) - no unit                   |
-| `mean_vol_ten_largest_glac`                          | Mean volume (10 largest glaciers by area) - unit: km3                       |
-| `elev_diff_area_weighted`                            | Elevation range (reg-aw) - unit: m                                          |
-| `ice_cap_ratio_hundredlargest_glac`                  | Ratio ice caps (100 largest glaciers) - no unit                             |
-| `max_elev_area_weighted`                             | Maximum elevation (reg-aw) - unit: m                                        |
-| `min_elev_area_weighted`                             | Minimum elevation (reg-aw) - unit: m                                        |
-| *Observed glacier changes and states ein the past (data from Hugonnet et al. 2021 & Farinotti et al. 2019):* |  |
-| `geodetic_obs_area_weighted`                         | Observed geodetic MB (2000-2019, reg) from Hugonnet et al. (2021) - unit: m w.e. year-1 |
-| `dvoldt_m3_hugonnet`                                 | Observed ΔVolumeΔt (2000-2019, reg) from Hugonnet et al. (2021) - unit: m3 per year |
-| `20yr_regional_dvol_dt_2000_2019_vs_2000_vol_%`      | Observed ΔMassΔt (2000-2019 relative to 2000 Mass, reg) - unit: %           |
-| `regional_volume_m3_itmix`                           | Glacier volume as given by Farinotti et al. (2019) (reg) - unit: m3         |
-| `regional_volume_m3_2020_via_5yravg`                 | Glacier volume in 2020 (est. from Farinotti et al. 2019 & Hugonnet et al.,  |
-|                                                      | 2021) (reg) - unit: m3                                                      |
-| `regional_volume_m3_itmix_vs_2020`                   | Ratio of glacier volume at RGI6 inventory date vs volume in 2020 (est.     |
-|                                                      | from Farinotti et al. 2019 & Hugonnet et al., 2021) (reg) - no unit       |
-| `rgi_year_weighted_median`                           | RGI year (reg-aw) - unit: year                                              |
-| *Glacier simulation change estimates (data from GlacierMIP3):* |                                                                    |
-| `resp_time_-50%_1_5_deg`                             | Response timescale (~1.5°C, 50%, reg) - unit: years                        |
-| `resp_time_-50%_3_0_deg`                             | Response timescale (~3.0°C, 50%, reg) - unit: years                        |
-| `resp_time_-80%_1_5_deg`                             | Response timescale (~1.5°C, 80%, reg) - unit: years                        |
-| `resp_time_-80%_3_0_deg`                             | Response timescale (~3.0°C, 80%, reg) - unit: years                        |
-| `resp_time_-50%_1_5_deg_only_global_models`          | Same as above but only considering glacier models with global simulations   |
-| `resp_time_-50%_3_0_deg_only_global_models`          | Same as above                                                               |
-| `resp_time_-80%_1_5_deg_only_global_models`          | Same as above                                                               |
-| `resp_time_-80%_3_0_deg_only_global_models`          | Same as above                                                               |
-| `ice_loss_1.2°C_%_rel_2020`                          | Committed glacier mass loss at ΔTemp=+1.2°C (rel. to 2020) - unit: %       |
-| `ice_loss_slope_1.5_to_3.0_per_tenth_degC_rel_2020` | Sensitivity of committed glacier mass loss (ΔTemp=1.5 to 3.0°C) - unit : % per 0.1°C  |
+| Column Name                                        | Description |
+|----------------------------------------------------|-------------|
+| `rgi_reg`, `region`                                | Regions e.g. ('11'), all regions together described as `All` in `rgi_reg` and as `global` in `region` |
+| *Climate Indices (data from ISIMIP3a (GSWP3-W5E5)):* |  |
+| `temp_ch_avg_2000-2019_vs_1901-1920`              | ΔTemp 2000-2019 - 1901-1920 (reg-aw) - unit: °C |
+| `temp_avg_2000-2019`                               | Temp 2000-2019 (reg-aw) - unit: °C |
+| `prcp_avg_2000-2019`                               | Prcp 2000-2019 (reg-aw) - unit: kg m-2 s-1 |
+| `continentality_index_avg_2000-2019`               | Continentality index 2000-2019 (temp difference between coldest/warmest month same year, reg-aw) - unit: °C |
+| `median_reg_vs_glob_ch`                            | Ratio reg vs global ΔTemp to pre-industrial (median, reg-aw) - no unit |
+| `median_reg_vs_glob_temp_ch_1.5_3.0`               | Same as `median_reg_vs_glob_ch` but only with experiments between 1.5°C and 3.0°C - no unit |
+| `median_reg_vs_glob_ch_ref_1986-2005`              | Ratio reg vs global ΔTemp to 1986-2005 (median, reg-aw) - no unit |
+| `median_reg_vs_glob_temp_ch_1.5_3.0_ref_1986-2005` | Same as `median_reg_vs_glob_ch_ref_1986-2005` but only with experiments between 1.5°C and 3.0°C - no unit |
+| `slope_fit_reg_vs_glob_ch`                         | Fitted linear fit slope regional vs global temp change (aw) - no unit |
+| *Glacier topography (data from RGI6):*             |  |
+| `slope_weighted_area_avg`                          | Glacier surface slope (reg-aw) - unit: ° |
+| `lat_absolute_weighted_area_avg`                   | Latitude (absolute, reg-aw) - unit: ° |
+| `lat_weighted_area_avg`                            | Latitude (reg-aw) - unit: ° |
+| `marine_term_ratio_hundredlargest_glac`            | Ratio marine-terminating (100 largest glaciers) - no unit |
+| `mean_vol_ten_largest_glac`                        | Mean volume (10 largest glaciers by area) - unit: km3 |
+| `elev_diff_area_weighted`                          | Elevation range (reg-aw) - unit: m |
+| `ice_cap_ratio_hundredlargest_glac`                | Ratio ice caps (100 largest glaciers) - no unit |
+| `max_elev_area_weighted`                           | Maximum elevation (reg-aw) - unit: m |
+| `min_elev_area_weighted`                           | Minimum elevation (reg-aw) - unit: m |
+| *Observed glacier changes and states in the past (data from Hugonnet et al. 2021 & Farinotti et al. 2019):* |  |
+| `geodetic_obs_area_weighted`                       | Observed geodetic MB (2000-2019, reg) from Hugonnet et al. (2021) - unit: m w.e. year-1 |
+| `dvoldt_m3_hugonnet`                               | Observed ΔVolumeΔt (2000-2019, reg) from Hugonnet et al. (2021) - unit: m3 per year |
+| `20yr_regional_dvol_dt_2000_2019_vs_2000_vol_%`    | Observed ΔMassΔt (2000-2019 relative to 2000 Mass, reg) - unit: % |
+| `regional_volume_m3_itmix`                         | Glacier volume as given by Farinotti et al. (2019) (reg) - unit: m3 |
+| `regional_volume_m3_2020_via_5yravg`               | Glacier volume in 2020 (est. from Farinotti et al. 2019 & Hugonnet et al., 2021) (reg) - unit: m3 |
+| `regional_volume_m3_itmix_vs_2020`                 | Ratio of glacier volume at RGI6 inventory date vs volume in 2020 (est. from Farinotti et al. 2019 & Hugonnet et al., 2021) (reg) - no unit |
+| `rgi_year_weighted_median`                         | RGI year (reg-aw) - unit: year |
+| *Glacier simulation change estimates (data from GlacierMIP3):* |  |
+| `resp_time_-50%_1_5_deg`                           | Response timescale (~1.5°C, 50%, reg) - unit: years |
+| `resp_time_-50%_3_0_deg`                           | Response timescale (~3.0°C, 50%, reg) - unit: years |
+| `resp_time_-80%_1_5_deg`                           | Response timescale (~1.5°C, 80%, reg) - unit: years |
+| `resp_time_-80%_3_0_deg`                           | Response timescale (~3.0°C, 80%, reg) - unit: years |
+| `resp_time_-50%_1_5_deg_only_global_models`        | Same as above but only considering glacier models with global simulations |
+| `resp_time_-50%_3_0_deg_only_global_models`        | Same as above |
+| `resp_time_-80%_1_5_deg_only_global_models`        | Same as above |
+| `resp_time_-80%_3_0_deg_only_global_models`        | Same as above |
+| `ice_loss_1.2°C_%_rel_2020`                        | Committed glacier mass loss at ΔTemp=+1.2°C (rel. to 2020) - unit: % |
+| `ice_loss_slope_1.5_to_3.0_per_tenth_degC_rel_2020` | Sensitivity of committed glacier mass loss (ΔTemp=1.5 to 3.0°C) - unit : % per 0.1°C |
+
 
 *Abbreviations: “10/100 largest” refers to the 10/100 glaciers with the largest initial glacier mass at inventory date according to the estimate by Farinotti et al. 2021. ”reg-aw” refers to regionally glacier-area weighted, “reg” refers to regional, “avg” refers to average, “Temp” refers to temperature, “Prcp” refers to precipitation.*
 > used for Supplementary Data Table S1 and S3, and for Fig. 4, Supplementary Fig. S3, S9, and many other figures
