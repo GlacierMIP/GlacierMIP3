@@ -13,7 +13,7 @@ For detailed information about the GlacierMIP3 experimental design, please refer
 
 The dataset includes the regional glacier volume and area projections as submitted by the glacier modelling groups, encapsulated in the main file `GMIP3_reg_glacier_model_data/glacierMIP3_Feb12_2024_models_all_rgi_regions_sum.nc`. Additionally, it features post-processed and aggregated data derived from GlacierMIP3, or in combination with other studies, which is used for the analyses and visualisations presented in the manuscript.
 
-> Zekollari*, H., Schuster*, L., Maussion, F., Hock, R., Marzeion, B., Rounce, D. R., Compagno, L., Fujita, K., Huss, M., James, M., Kraaijenbrink, P. D. A., Lipscomb, W. H., Minallah, S., Oberrauch, M., Van Tricht, L., Champollion, N., Edwards, T., Farinotti, D., Immerzeel, W., Leguy, G., Sakai, A. (under review). Glacier preservation doubled by limiting warming to 1.5°C (https://doi.org/10.31223/X51T5W), 2024.
+> Zekollari*, H., Schuster*, L., Maussion, F., Hock, R., Marzeion, B., Rounce, D. R., Compagno, L., Fujita, K., Huss, M., James, M., Kraaijenbrink, P. D. A., Lipscomb, W. H., Minallah, S., Oberrauch, M., Van Tricht, L., Champollion, N., Edwards, T., Farinotti, D., Immerzeel, W., Leguy, G., Sakai, A. (2025). Glacier preservation doubled by limiting warming to 1.5°C versus 2.7°C, Science, https://doi.org/10.1126/science.adu4675.
 *These authors contributed equally
 
 When using this dataset, please cite both the Zenodo dataset ([doi: 10.5281/zenodo.14045268](https://doi.org/10.5281/zenodo.14045268)) and the submitted study above. Note that we are currently working on another potential study to analyse the glacier model differences more thoroughly. 
